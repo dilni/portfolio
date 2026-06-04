@@ -1,0 +1,266 @@
+/* style.css */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+/* Scrollbar Customization */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #000000;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #333333;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #c7b28b;
+    /* Coral accent */
+}
+
+.light-mode ::-webkit-scrollbar-thumb:hover {
+    background: #2503ad;
+    /*#2563eb*/
+    /* Blue accent */
+}
+
+/* Reveal Animations */
+section {
+    scroll-margin-top: 80px; /* Aligns exactly with the fixed header height */
+}
+
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s cubic-bezier(0.5, 0, 0, 1);
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Light Mode Overrides */
+body.light-mode {
+    background-color: #f8fafc !important;
+    /* slate-50 */
+    color: #374151 !important;
+    /* Elegant charcoal grey */
+}
+
+body.light-mode .bg-black {
+    background-color: #f8fafc !important;
+}
+
+body.light-mode .bg-darkgray {
+    background-color: #ffffff !important;
+    border-color: #94a3b8 !important;
+    /* Bolder border */
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.15), 0 8px 10px -6px rgba(0, 0, 0, 0.1) !important;
+    /* Darker, larger shadow */
+}
+
+body.light-mode .border-darkgray {
+    border-color: #cbd5e1 !important;
+    /* Softer border for the profile image */
+}
+
+body.light-mode .text-white {
+    color: #1f2937 !important;
+    /* Darker grey for headings */
+}
+
+body.light-mode .text-gray-200 {
+    color: #1e293b !important;
+}
+
+body.light-mode .text-gray-300 {
+    color: #334155 !important;
+}
+
+body.light-mode .text-gray-400 {
+    color: #475569 !important;
+}
+
+body.light-mode .text-gray-500 {
+    color: #64748b !important;
+}
+
+body.light-mode .border-white\/5,
+body.light-mode .border-white\/10,
+body.light-mode .border-white\/20,
+body.light-mode .border-gray-600 {
+    border-color: #94a3b8 !important;
+    /* Bolder border for inputs and elements */
+}
+
+body.light-mode .bg-black\/50,
+body.light-mode .bg-black\/95 {
+    background-color: rgba(255, 255, 255, 0.9) !important;
+    border-color: #cbd5e1 !important;
+}
+
+/* Transparent Header for Light Mode */
+body.light-mode .bg-black\/70 {
+    background-color: rgba(255, 255, 255, 0.3) !important;
+    backdrop-filter: blur(12px) !important;
+    border-bottom-color: rgba(0, 0, 0, 0.05) !important;
+}
+
+body.light-mode .bg-white\/10 {
+    background-color: rgba(15, 23, 42, 0.05) !important;
+}
+
+body.light-mode .bg-white\/20,
+body.light-mode .hover\:bg-white\/20:hover {
+    background-color: rgba(15, 23, 42, 0.1) !important;
+}
+
+body.light-mode input,
+body.light-mode textarea {
+    background-color: #ffffff !important;
+    color: #0f172a !important;
+    border-color: #94a3b8 !important;
+    box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.05) !important;
+}
+
+body.light-mode input::placeholder,
+body.light-mode textarea::placeholder {
+    color: #64748b !important;
+}
+
+/* Accent Color Overrides for Light Mode (Blue) */
+body.light-mode .text-accent {
+    color: #2503ad !important;
+    /* Vibrant Blue */
+}
+
+body.light-mode .bg-accent {
+    background-color: #2503ad !important;
+    /* #2563eb !important;*/
+}
+
+/* Ensure text on solid blue buttons is white */
+body.light-mode .bg-accent.text-black {
+    color: #ffffff !important;
+}
+
+body.light-mode .border-accent,
+body.light-mode .border-accent\/30,
+body.light-mode .border-accent\/40,
+body.light-mode .border-accent\/50,
+body.light-mode .border-accent\/60 {
+    border-color: #2503ad !important;
+}
+
+body.light-mode .bg-accent\/5,
+body.light-mode .bg-accent\/10 {
+    background-color: rgba(37, 3, 173, 0.1) !important;
+}
+
+body.light-mode .bg-accent\/60 {
+    background-color: rgba(37, 3, 173, 0.6) !important;
+}
+
+body.light-mode .text-accent\/70 {
+    color: rgba(37, 3, 173, 0.8) !important;
+}
+
+/* Light Mode Hover & Image Shadow Overrides */
+body.light-mode [class*="hover:shadow-"]:hover {
+    box-shadow: 0 10px 20px rgba(37, 3, 173, 0.15) !important;
+}
+
+body.light-mode .bg-accent[class*="hover:shadow-"]:hover {
+    box-shadow: 0 10px 20px rgba(37, 3, 173, 0.4) !important;
+}
+
+body.light-mode .shadow-\[0_0_40px_rgba\(199\,178\,139\,0\.15\)\] {
+    box-shadow: 0 10px 40px rgba(37, 3, 173, 0.3) !important;
+}
+
+/* Light Mode Green Overrides (Status Pill) */
+body.light-mode .text-green-400 {
+    color: #15803d !important;
+    /* text-green-700 */
+}
+
+body.light-mode .bg-green-500\/10 {
+    background-color: #dcfce7 !important;
+    /* bg-green-100 */
+}
+
+body.light-mode .border-green-500\/20 {
+    border-color: #86efac !important;
+    /* border-green-300 */
+}
+
+body.light-mode .bg-green-500 {
+    background-color: #22c55e !important;
+    box-shadow: 0 0 8px rgba(34, 197, 94, 0.5) !important;
+}/* AI Chat Widget Light Mode Overrides */
+body.light-mode #chat-panel {
+    background-color: rgba(255, 255, 255, 0.85) !important;
+    border-color: rgba(0, 0, 0, 0.1) !important;
+    box-shadow: 0 20px 40px rgba(37, 3, 173, 0.15) !important;
+}
+body.light-mode #chat-panel .bg-black\/40 {
+    background-color: rgba(255, 255, 255, 0.6) !important;
+    border-color: rgba(0, 0, 0, 0.05) !important;
+}
+body.light-mode #chat-history .bg-white\/5 {
+    background-color: #f1f5f9 !important;
+    border-color: #e2e8f0 !important;
+    color: #334155 !important;
+}
+body.light-mode #chat-history .text-gray-200 {
+    color: #334155 !important;
+}
+body.light-mode #chat-input {
+    background-color: #ffffff !important;
+    border-color: #cbd5e1 !important;
+    color: #1f2937 !important;
+}
+body.light-mode #chat-input::placeholder {
+    color: #94a3b8 !important;
+}
+body.light-mode #chat-fab {
+    background-color: #ffffff !important;
+    border-color: #cbd5e1 !important;
+    box-shadow: 0 10px 25px rgba(37, 3, 173, 0.2) !important;
+}
+body.light-mode #chat-fab i {
+    color: #1f2937 !important;
+}
+body.light-mode #chat-fab:hover i {
+    color: #2503ad !important;
+}
+body.light-mode #chat-panel .text-gray-400,
+body.light-mode #chat-panel .fa-xmark {
+    color: #64748b !important;
+}
+body.light-mode #chat-panel .bg-white\/10 {
+    background-color: #e2e8f0 !important;
+}
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(5px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+.animate-fade-in {
+    animation: fadeIn 0.3s ease-out forwards;
+}
+
+@keyframes modalIn {
+    from { opacity: 0; transform: scale(0.9) translateY(20px); }
+    to { opacity: 1; transform: scale(1) translateY(0); }
+}
+
+.animate-modal-in {
+    animation: modalIn 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}

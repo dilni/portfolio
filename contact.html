@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dilni - Contact</title>
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        accent: '#c7b28b', // Elegant coral/deep rose pink accent
+                        darkgray: '#1a1a1a', // Soft dark gray for cards
+                    },
+                    animation: {
+                        float: 'float 6s ease-in-out infinite',
+                        blink: 'blink 1s step-end infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        },
+                        blink: {
+                            '0%, 100%': { opacity: '1' },
+                            '50%': { opacity: '0' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-black text-white antialiased overflow-x-hidden selection:bg-accent selection:text-white">
+
+    <!-- Navigation Bar -->
+    <header
+        class="fixed top-0 w-full z-50 bg-black/70 backdrop-blur-md border-b border-white/10 transition-all duration-300 py-5"
+        id="navbar">
+        <div class="max-w-7xl mx-auto px-6 flex justify-between items-center">
+            <!-- Left: Logo & Status Pill -->
+            <div class="flex items-center gap-6">
+                <a href="index.html#home" class="text-2xl font-bold tracking-wider text-white">Dilni<span
+                        class="text-accent">.</span></a>
+                <div
+                    class="hidden lg:flex items-center gap-2 bg-green-500/10 text-green-400 border border-green-500/20 px-3 py-1 rounded-full text-xs font-semibold tracking-wide">
+                    <div
+                        class="w-1.5 h-1.5 bg-green-500 rounded-full animate-pulse shadow-[0_0_8px_rgba(34,197,94,0.8)]">
+                    </div>
+                    Open to Work
+                </div>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button class="xl:hidden text-white hover:text-accent transition-colors" id="mobile-menu-btn">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+
+            <!-- Right: Nav Links + Actions -->
+            <div class="hidden xl:flex items-center gap-8">
+                <nav class="flex gap-8 text-sm font-medium">
+                    <a href="index.html#home" class="hover:text-accent transition-colors nav-link">Home</a>
+                    <a href="index.html#services" class="hover:text-accent transition-colors nav-link">Services</a>
+                    <a href="index.html#skills" class="hover:text-accent transition-colors nav-link">Skills</a>
+                    <a href="index.html#education" class="hover:text-accent transition-colors nav-link">Education</a>
+                    <a href="index.html#experience" class="hover:text-accent transition-colors nav-link">Experience</a>
+                </nav>
+
+                <div class="flex items-center gap-5 pl-8 border-l border-white/10">
+                    <!-- Sliding Theme Toggle -->
+                    <button id="theme-toggle"
+                        class="relative w-12 h-6 bg-white/10 rounded-full border border-white/5 flex items-center px-1 transition-colors hover:bg-white/20 cursor-pointer">
+                        <div id="theme-toggle-circle"
+                            class="w-4 h-4 bg-accent rounded-full shadow-md transform translate-x-6 transition-transform duration-300 flex items-center justify-center">
+                            <i id="theme-toggle-icon" class="fa-solid fa-moon text-[10px] text-black"></i>
+                        </div>
+                    </button>
+                    <!-- Hire Me Button -->
+                    <a href="contact.html"
+                        class="bg-accent text-black px-5 py-2 rounded-full text-sm font-bold transition-all duration-300 hover:brightness-110 hover:-translate-y-[3px] hover:shadow-[0_10px_20px_rgba(199,178,139,0.4)]">Hire
+                        Me</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content for Contact Page -->
+    <main class="pt-32 pb-12">
+        <section id="contact" class="py-12 bg-black">
+            <div class="max-w-6xl mx-auto px-6">
+                <div class="text-center mb-16 reveal">
+                    <h2 class="text-4xl font-bold mb-4">Get In <span class="text-accent">Touch</span></h2>
+                    <div class="w-24 h-1 bg-accent mx-auto rounded"></div>
+                    <p class="text-gray-400 mt-6 max-w-2xl mx-auto">
+                        Have a question, a project idea, or just want to say hello? Drop me a message below and I'll get back to you as soon as possible.
+                    </p>
+                </div>
+
+                <div class="grid lg:grid-cols-5 gap-8 lg:gap-12 reveal">
+                    <!-- Left Column: Form (spans 3 cols) -->
+                    <div class="lg:col-span-3">
+                        <form action="https://formspree.io/f/dilniwijesinghe@gmail.com" method="POST"
+                            class="bg-darkgray p-8 md:p-10 rounded-3xl border border-white/5 h-full flex flex-col relative overflow-hidden group">
+                            <!-- Glow highlight -->
+                            <div
+                                class="absolute top-0 right-0 w-64 h-64 bg-accent/5 rounded-bl-full pointer-events-none group-hover:scale-110 transition-transform duration-700">
+                            </div>
+
+                            <div class="grid md:grid-cols-2 gap-6 mb-6 relative z-10">
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-400 mb-2">Name</label>
+                                    <input type="text" name="name" placeholder="John Doe" required
+                                        class="w-full bg-black border border-white/10 rounded-xl px-4 py-4 text-white placeholder-gray-600 focus:outline-none focus:border-accent focus:shadow-[0_0_15px_rgba(199,178,139,0.2)] transition-all">
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-400 mb-2">Email</label>
+                                    <input type="email" name="email" placeholder="john@example.com" required
+                                        class="w-full bg-black border border-white/10 rounded-xl px-4 py-4 text-white placeholder-gray-600 focus:outline-none focus:border-accent focus:shadow-[0_0_15px_rgba(199,178,139,0.2)] transition-all">
+                                </div>
+                            </div>
+                            <div class="mb-8 flex-grow relative z-10">
+                                <label class="block text-sm font-medium text-gray-400 mb-2">Message</label>
+                                <textarea name="message" placeholder="Tell me about your project..." rows="5" required
+                                    class="w-full h-40 bg-black border border-white/10 rounded-xl px-4 py-4 text-white placeholder-gray-600 focus:outline-none focus:border-accent focus:shadow-[0_0_15px_rgba(199,178,139,0.2)] transition-all resize-none"></textarea>
+                            </div>
+                            <button type="submit"
+                                class="w-full bg-accent text-black font-bold py-4 rounded-xl transition-all duration-300 hover:brightness-110 hover:-translate-y-[3px] shadow-[0_0_15px_rgba(199,178,139,0.3)] hover:shadow-[0_10px_20px_rgba(199,178,139,0.4)] flex items-center justify-center gap-3 relative z-10">
+                                Send Message <i class="fa-solid fa-paper-plane"></i>
+                            </button>
+                        </form>
+                    </div>
+
+                    <!-- Right Column: Contact Cards (spans 2 cols) -->
+                    <div class="lg:col-span-2 flex flex-col gap-4">
+                        <!-- Email Card -->
+                        <a href="mailto:dilniwijesinghe@gmail.com"
+                            class="group bg-darkgray p-6 rounded-2xl border border-white/5 hover:border-accent/40 transition-all duration-300 hover:-translate-y-[3px] hover:shadow-[0_10px_20px_rgba(199,178,139,0.4)] flex items-center gap-5">
+                            <div
+                                class="w-14 h-14 bg-black rounded-full flex items-center justify-center border border-white/10 text-accent group-hover:bg-accent group-hover:text-black transition-colors shadow-inner shadow-accent/10">
+                                <i class="fa-solid fa-envelope text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-bold text-lg mb-1">Email</h4>
+                                <p class="text-gray-400 text-sm">dilniwijesinghe@gmail.com</p>
+                            </div>
+                        </a>
+
+                        <!-- LinkedIn Card -->
+                        <a href="#"
+                            class="group bg-darkgray p-6 rounded-2xl border border-white/5 hover:border-accent/40 transition-all duration-300 hover:-translate-y-[3px] hover:shadow-[0_10px_20px_rgba(199,178,139,0.4)] flex items-center gap-5">
+                            <div
+                                class="w-14 h-14 bg-black rounded-full flex items-center justify-center border border-white/10 text-accent group-hover:bg-accent group-hover:text-black transition-colors shadow-inner shadow-accent/10">
+                                <i class="fa-brands fa-linkedin-in text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-bold text-lg mb-1">LinkedIn</h4>
+                                <p class="text-gray-400 text-sm">Connect professionally</p>
+                            </div>
+                        </a>
+
+                        <!-- GitHub Card -->
+                        <a href="#"
+                            class="group bg-darkgray p-6 rounded-2xl border border-white/5 hover:border-accent/40 transition-all duration-300 hover:-translate-y-[3px] hover:shadow-[0_10px_20px_rgba(199,178,139,0.4)] flex items-center gap-5">
+                            <div
+                                class="w-14 h-14 bg-black rounded-full flex items-center justify-center border border-white/10 text-accent group-hover:bg-accent group-hover:text-black transition-colors shadow-inner shadow-accent/10">
+                                <i class="fa-brands fa-github text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-bold text-lg mb-1">GitHub</h4>
+                                <p class="text-gray-400 text-sm">See my code & projects</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Simple Footer for Contact Page -->
+    <footer class="border-t border-white/10 bg-darkgray py-12 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6 relative z-10 flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
+            <div>
+                <a href="index.html#home" class="text-xl font-bold tracking-wider text-white block mb-2">Dilni<span class="text-accent">.</span></a>
+                <p>&copy; 2026 Dilni. All rights reserved.</p>
+            </div>
+            <div class="flex gap-8 mt-6 md:mt-0">
+                <a href="index.html#home" class="hover:text-white transition-colors">Home</a>
+                <a href="index.html#experience" class="hover:text-white transition-colors">Projects</a>
+                <a href="index.html#skills" class="hover:text-white transition-colors">Skills</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script File -->
+    <script src="script.js"></script>
+</body>
+
+</html>
