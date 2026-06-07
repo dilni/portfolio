@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan Prediction System - Project Details</title>
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        accent: '#c7b28b',
+                        darkgray: '#1a1a1a',
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-black text-white antialiased selection:bg-accent selection:text-white">
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 bg-black/70 backdrop-blur-md border-b border-white/10 py-4">
+        <div class="max-w-7xl mx-auto px-6 flex justify-between items-center">
+            <a href="index.html" class="text-xl font-bold tracking-wider text-white">Dilni<span class="text-accent">.</span></a>
+            <a href="index.html#experience" class="text-sm font-medium hover:text-accent transition-colors flex items-center gap-2">
+                <i class="fa-solid fa-arrow-left text-xs"></i> Back to Projects
+            </a>
+        </div>
+    </nav>
+
+    <main class="pt-32 pb-24">
+        <div class="max-w-7xl mx-auto px-6">
+            <!-- Header Section -->
+            <div class="mb-12">
+                <div class="flex items-center gap-3 mb-4">
+                    <span class="px-3 py-1 bg-green-500/10 text-green-400 border border-green-500/20 rounded-full text-xs font-bold uppercase tracking-widest">FinTech Solution</span>
+                    <span class="text-gray-500 text-xs font-medium">Predictive Analytics</span>
+                </div>
+                <h1 class="text-4xl md:text-5xl font-bold mb-6">Loan Approval & <span class="text-accent">Limit Prediction System</span></h1>
+                <p class="text-gray-400 text-lg max-w-10xl leading-relaxed">
+                    A high-precision financial lending system using an ensemble voting classifier to support automated lending decisions and credit limit assessments.
+                </p>
+            </div>
+
+            <!-- Project Hero Slider -->
+            <div class="relative w-full h-[300px] md:h-[500px] bg-darkgray/50 rounded-3xl overflow-hidden border border-white/10 mb-16 group flex items-center justify-center">
+                <!-- Slides Container -->
+                <div id="hero-slider" class="absolute inset-0">
+                 <!-- Blurred Background for sides -->
+                <div class="absolute inset-0 bg-cover bg-center blur-3xl scale-110 opacity-30 transition-transform duration-700 group-hover:scale-125" style="background-image: url('Harvextro_1.jpeg');"></div>
+
+                    <!-- Slides -->
+                    <div class="hero-slide absolute inset-0 opacity-100 transition-all duration-700 flex items-center justify-center">
+                        <img src="loan-system_1.png" alt="Loan System" class="relative z-10 w-full h-full object-contain group-hover:scale-[1.02] transition-transform duration-700">
+                    </div>
+                    <div class="hero-slide absolute inset-0 opacity-0 transition-all duration-700 flex items-center justify-center translate-x-8">
+                        <img src="loan-system_2.png" alt="Loan System" class="relative z-10 w-full h-full object-contain group-hover:scale-[1.02] transition-transform duration-700">
+                    </div>
+                    <div class="hero-slide absolute inset-0 opacity-0 transition-all duration-700 flex items-center justify-center translate-x-8">
+                        <img src="loan-system_3.png" alt="Loan System" class="relative z-10 w-full h-full object-contain group-hover:scale-[1.02] transition-transform duration-700">
+                    </div>
+                    <div class="hero-slide absolute inset-0 opacity-0 transition-all duration-700 flex items-center justify-center translate-x-8">
+                        <img src="loan-system_4.png" alt="Loan System" class="relative z-10 w-full h-full object-contain group-hover:scale-[1.02] transition-transform duration-700">
+                    </div>
+                    <div class="hero-slide absolute inset-0 opacity-0 transition-all duration-700 flex items-center justify-center translate-x-8">
+                        <img src="loan-system_5.png" alt="Loan System" class="relative z-10 w-full h-full object-contain group-hover:scale-[1.02] transition-transform duration-700">
+                    </div>
+                    <div class="hero-slide absolute inset-0 opacity-0 transition-all duration-700 flex items-center justify-center translate-x-8">
+                        <img src="loan-system_6.png" alt="Loan System" class="relative z-10 w-full h-full object-contain group-hover:scale-[1.02] transition-transform duration-700">
+                    </div>
+                </div>
+
+                <!-- Navigation Arrows -->
+                <button id="prev-slide" class="absolute left-6 top-1/2 -translate-y-1/2 w-14 h-14 rounded-full bg-black/60 backdrop-blur-md border border-white/10 text-white flex items-center justify-center hover:bg-accent hover:text-black transition-all z-30 opacity-0 group-hover:opacity-100">
+                    <i class="fa-solid fa-chevron-left text-xl"></i>
+                </button>
+                <button id="next-slide" class="absolute right-6 top-1/2 -translate-y-1/2 w-14 h-14 rounded-full bg-black/60 backdrop-blur-md border border-white/10 text-white flex items-center justify-center hover:bg-accent hover:text-black transition-all z-30 opacity-0 group-hover:opacity-100">
+                    <i class="fa-solid fa-chevron-right text-xl"></i>
+                </button>
+
+                <!-- Slide Counter -->
+                <div class="absolute bottom-8 left-1/2 -translate-x-1/2 px-6 py-2.5 bg-black/60 backdrop-blur-md rounded-full border border-white/10 text-sm font-bold text-white z-30 opacity-0 group-hover:opacity-100 transition-opacity">
+                    <span id="current-slide-num">1</span> / <span id="total-slides-num">11</span>
+                </div>
+            </div>
+
+            <div class="grid lg:grid-cols-3 gap-12">
+                <!-- Left Column: Detailed Content -->
+                <div class="lg:col-span-2 space-y-20">
+                    <!-- Overview -->
+                    <section>
+                        <h2 class="text-3xl font-bold mb-6">Project Overview</h2>
+                        <p class="text-gray-400 leading-relaxed text-lg mb-6">
+                            Developed to modernize traditional lending processes, this system leverages advanced machine learning techniques to evaluate loan applications and predict appropriate credit limits with near-perfect accuracy.
+                        </p>
+                        <p class="text-gray-400 leading-relaxed text-lg">
+                            By implementing robust data preprocessing and feature engineering pipelines, the system identifies key financial indicators and risk patterns, enabling financial institutions to make data-driven decisions while minimizing default risks.
+                        </p>
+                    </section>
+
+                    <!-- Core Methodology -->
+                    <section class="space-y-8">
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 bg-accent/10 rounded-2xl flex items-center justify-center text-accent">
+                                <i class="fa-solid fa-brain text-xl"></i>
+                            </div>
+                            <h2 class="text-2xl font-bold">Machine Learning Pipeline</h2>
+                        </div>
+                        
+                        <div class="grid gap-6">
+                            <div class="bg-darkgray p-6 rounded-2xl border border-white/5">
+                                <h3 class="text-accent font-bold mb-2">Ensemble Voting Classifier</h3>
+                                <p class="text-sm text-gray-400">Combines multiple high-performing algorithms to create a robust voting mechanism, significantly reducing variance and bias in predictions.</p>
+                            </div>
+                            <div class="bg-darkgray p-6 rounded-2xl border border-white/5">
+                                <h3 class="text-accent font-bold mb-2">Feature Engineering</h3>
+                                <p class="text-sm text-gray-400">Transformation of raw financial data into meaningful indicators, including debt-to-income ratios, credit history scoring, and income stability metrics.</p>
+                            </div>
+                            <div class="bg-darkgray p-6 rounded-2xl border border-white/5">
+                                <h3 class="text-accent font-bold mb-2">Data Preprocessing</h3>
+                                <p class="text-sm text-gray-400">Implementation of sophisticated cleaning loops, outlier detection, and normalization techniques to ensure high data quality for model training.</p>
+                            </div>
+                            <div class="bg-darkgray p-6 rounded-2xl border border-white/5">
+                                <h3 class="text-accent font-bold mb-2">Optimization</h3>
+                                <p class="text-sm text-gray-400">Hyperparameter tuning and cross-validation strategies were employed to reach a peak classification accuracy of 99.9%.</p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Key Features -->
+                    <section>
+                        <h2 class="text-2xl font-bold mb-8">System Capabilities</h2>
+                        <div class="space-y-4">
+                            <div class="flex gap-4 p-6 rounded-xl bg-white/5 border border-white/5">
+                                <i class="fa-solid fa-check-double text-accent mt-1"></i>
+                                <div>
+                                    <h4 class="font-bold text-white">Automated Approval Logic</h4>
+                                    <p class="text-sm text-gray-400">Instant evaluation of loan eligibility based on multi-factor risk analysis.</p>
+                                </div>
+                            </div>
+                            <div class="flex gap-4 p-6 rounded-xl bg-white/5 border border-white/5">
+                                <i class="fa-solid fa-calculator text-accent mt-1"></i>
+                                <div>
+                                    <h4 class="font-bold text-white">Dynamic Limit Assessment</h4>
+                                    <p class="text-sm text-gray-400">Calculates personalized credit limits tailored to the applicant's financial profile and repayment capacity.</p>
+                                </div>
+                            </div>
+                            <div class="flex gap-4 p-6 rounded-xl bg-white/5 border border-white/5">
+                                <i class="fa-solid fa-shield-halved text-accent mt-1"></i>
+                                <div>
+                                    <h4 class="font-bold text-white">Risk Mitigation</h4>
+                                    <p class="text-sm text-gray-400">Early detection of potential default patterns through anomaly detection in financial history.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
+                <!-- Right Column: Sidebar -->
+                <div class="lg:col-span-1">
+                    <div class="sticky top-32 space-y-8">
+                        <!-- Stats Card -->
+                        <div class="bg-darkgray p-8 rounded-3xl border border-white/10">
+                            <h3 class="text-xl font-bold mb-6 text-white">Performance Metrics</h3>
+                            <div class="space-y-6">
+                                <div class="flex justify-between items-center">
+                                    <span class="text-xs text-gray-500 font-bold uppercase">Accuracy</span>
+                                    <span class="text-green-400 font-bold text-lg">99.9%</span>
+                                </div>
+                                <div class="flex justify-between items-center">
+                                    <span class="text-xs text-gray-500 font-bold uppercase">F1-Score</span>
+                                    <span class="text-accent font-bold">0.998</span>
+                                </div>
+                                <div class="flex justify-between items-center">
+                                    <span class="text-xs text-gray-500 font-bold uppercase">Status</span>
+                                    <span class="px-3 py-1 bg-green-500/10 text-green-400 border border-green-500/20 rounded-full text-[10px] font-bold">
+                                        Completed
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Contribution -->
+                        <div class="bg-darkgray p-8 rounded-3xl border border-white/10">
+                            <h3 class="text-xl font-bold mb-4 text-white">My Contribution</h3>
+                            <p class="text-sm text-gray-400 leading-relaxed">
+                                <span class="text-accent font-bold">ML Engineer.</span> Responsible for the entire end-to-end machine learning pipeline, including data engineering, model selection, and deployment optimization.
+                            </p>
+                        </div>
+
+                        <!-- GitHub CTA -->
+                        <div class="bg-accent/5 p-8 rounded-3xl border border-accent/20">
+                            <h4 class="text-lg font-bold mb-4">View the Code</h4>
+                            <p class="text-sm text-gray-400 mb-6">Explore the implementation and model evaluations on GitHub.</p>
+                            <a href="https://github.com/dilni/classification-models-for-loan-approval" class="w-full py-4 bg-accent text-black rounded-xl font-bold flex items-center justify-center gap-3 hover:brightness-110 transition-all">
+                                <i class="fa-brands fa-github text-lg"></i> GitHub Repository
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="py-12 border-t border-white/5">
+        <div class="max-w-7xl mx-auto px-6 text-center text-gray-500 text-sm">
+            <p>&copy; 2026 Dilni Rohansi Wijesinghe. All rights reserved.</p>
+        </div>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const slides = document.querySelectorAll('.hero-slide');
+            const prevBtn = document.getElementById('prev-slide');
+            const nextBtn = document.getElementById('next-slide');
+            const currentNum = document.getElementById('current-slide-num');
+            const totalNum = document.getElementById('total-slides-num');
+            
+            let currentSlide = 0;
+            const totalSlides = slides.length;
+            
+            // Set total count
+            if (totalNum) totalNum.textContent = totalSlides;
+            
+            function showSlide(index) {
+                slides.forEach((slide, i) => {
+                    if (i === index) {
+                        slide.style.opacity = '1';
+                        slide.style.transform = 'translateX(0)';
+                        slide.classList.remove('pointer-events-none');
+                    } else {
+                        slide.style.opacity = '0';
+                        slide.style.transform = i < index ? 'translateX(-2rem)' : 'translateX(2rem)';
+                        slide.classList.add('pointer-events-none');
+                    }
+                });
+                if (currentNum) currentNum.textContent = index + 1;
+            }
+            
+            if (nextBtn) {
+                nextBtn.addEventListener('click', () => {
+                    currentSlide = (currentSlide + 1) % totalSlides;
+                    showSlide(currentSlide);
+                });
+            }
+            
+            if (prevBtn) {
+                prevBtn.addEventListener('click', () => {
+                    currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+                    showSlide(currentSlide);
+                });
+            }
+
+            // Keyboard navigation
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'ArrowRight' && nextBtn) nextBtn.click();
+                if (e.key === 'ArrowLeft' && prevBtn) prevBtn.click();
+            });
+        });
+    </script>
+</body>
+</html>

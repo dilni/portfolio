@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traffic Data Analysis - Project Details</title>
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        accent: '#c7b28b',
+                        darkgray: '#1a1a1a',
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-black text-white antialiased selection:bg-accent selection:text-white">
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 bg-black/70 backdrop-blur-md border-b border-white/10 py-4">
+        <div class="max-w-7xl mx-auto px-6 flex justify-between items-center">
+            <a href="index.html" class="text-xl font-bold tracking-wider text-white">Dilni<span class="text-accent">.</span></a>
+            <a href="index.html#experience" class="text-sm font-medium hover:text-accent transition-colors flex items-center gap-2">
+                <i class="fa-solid fa-arrow-left text-xs"></i> Back to Projects
+            </a>
+        </div>
+    </nav>
+
+    <main class="pt-32 pb-24">
+        <div class="max-w-7xl mx-auto px-6">
+            <!-- Header Section -->
+            <div class="mb-12">
+                <div class="flex items-center gap-3 mb-4">
+                    <span class="px-3 py-1 bg-accent/10 text-accent border border-accent/20 rounded-full text-xs font-bold uppercase tracking-widest">University Project (2024)</span>
+                    <span class="text-gray-500 text-xs font-medium">Urban Mobility Optimization</span>
+                </div>
+                <h1 class="text-4xl md:text-6xl font-bold mb-6">Traffic Data <span class="text-accent">Analysis Application</span></h1>
+                <p class="text-gray-400 text-xl max-w-4xl leading-relaxed">
+                    An intelligent data-processing application engineered to analyze municipal transportation datasets and optimize urban mobility flows.
+                </p>
+            </div>
+
+            <!-- Project Hero -->
+            <div class="relative w-full h-[300px] md:h-[500px] bg-darkgray/50 rounded-3xl overflow-hidden border border-white/10 mb-16 group flex items-center justify-center">
+                <div class="absolute inset-0 bg-gradient-to-br from-blue-900/10 to-transparent opacity-50"></div>
+                <div class="relative z-10 text-center">
+                    <div class="w-24 h-24 bg-blue-500/10 rounded-full flex items-center justify-center border border-blue-500/20 mb-6 mx-auto group-hover:scale-110 transition-transform duration-500">
+                        <i class="fa-solid fa-car text-4xl text-blue-400"></i>
+                    </div>
+                    <p class="text-blue-400 font-bold tracking-[0.2em] uppercase text-sm">Urban Intelligence Dashboard</p>
+                </div>
+            </div>
+
+            <div class="grid lg:grid-cols-3 gap-12">
+                <!-- Left Column: Detailed Content -->
+                <div class="lg:col-span-2 space-y-20">
+                    <!-- Overview -->
+                    <section>
+                        <h2 class="text-3xl font-bold mb-6">Project Overview</h2>
+                        <p class="text-gray-400 leading-relaxed text-lg mb-6">
+                            The platform ingests massive volumes of raw sensor log records, extracts temporal patterns, runs statistical validation tests, and outputs interactive visual telemetry reports to map traffic congestion zones.
+                        </p>
+                    </section>
+
+                    <!-- 1. Data Ingestion -->
+                    <section class="space-y-8">
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 bg-accent/10 rounded-2xl flex items-center justify-center text-accent">
+                                <i class="fa-solid fa-truck-ramp-box text-xl"></i>
+                            </div>
+                            <h2 class="text-2xl font-bold">1. Data Ingestion & Transformation Pipeline</h2>
+                        </div>
+                        <p class="text-gray-400 leading-relaxed">Ingests high-volume time-series transport logs to prepare clean telemetry profiles.</p>
+                        
+                        <div class="grid gap-6">
+                            <div class="bg-darkgray p-6 rounded-2xl border border-white/5 hover:border-accent/20 transition-colors">
+                                <h3 class="text-accent font-bold mb-2">High-Volume Ingestion</h3>
+                                <p class="text-sm text-gray-400">Parses multi-gigabyte traffic flow datasets containing vehicle counts, speed logs, and timestamp entries using Pandas.</p>
+                            </div>
+                            <div class="bg-darkgray p-6 rounded-2xl border border-white/5 hover:border-accent/20 transition-colors">
+                                <h3 class="text-accent font-bold mb-2">Time-Series Indexing</h3>
+                                <p class="text-sm text-gray-400">Implements comprehensive datetime indexing to structure raw logs into precise hourly, daily, and seasonal intervals.</p>
+                            </div>
+                            <div class="bg-darkgray p-6 rounded-2xl border border-white/5 hover:border-accent/20 transition-colors">
+                                <h3 class="text-accent font-bold mb-2">Outlier Filtering</h3>
+                                <p class="text-sm text-gray-400">Employs statistical filtering techniques (IQR range bounds) to strip out sensor transmission errors and capture genuine traffic events.</p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- 2. Trend Identification -->
+                    <section class="space-y-8">
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 bg-accent/10 rounded-2xl flex items-center justify-center text-accent">
+                                <i class="fa-solid fa-magnifying-glass-location text-xl"></i>
+                            </div>
+                            <h2 class="text-2xl font-bold">2. Trend Identification & Visual Analytics</h2>
+                        </div>
+                        <p class="text-gray-400 leading-relaxed">Converts processed transportation matrices into clear, actionable spatial-temporal insights.</p>
+                        
+                        <div class="grid sm:grid-cols-2 gap-6">
+                            <div class="bg-darkgray p-6 rounded-2xl border border-white/5 hover:border-accent/20 transition-colors">
+                                <h4 class="font-bold mb-2 text-white">Trend Bottleneck Mapping</h4>
+                                <p class="text-xs text-gray-400">Runs statistical aggregations to pinpoint peak traffic congestion hours and identify structural bottlenecks across road networks.</p>
+                            </div>
+                            <div class="bg-darkgray p-6 rounded-2xl border border-white/5 hover:border-accent/20 transition-colors">
+                                <h4 class="font-bold mb-2 text-white">Visualization Layout Layer</h4>
+                                <p class="text-xs text-gray-400">Translates complex flow matrices into readable traffic load profiles, distribution histograms, and line charts using Matplotlib.</p>
+                            </div>
+                            <div class="bg-darkgray p-6 rounded-2xl border border-white/5 hover:border-accent/20 transition-colors sm:col-span-2">
+                                <h4 class="font-bold mb-2 text-white">Strategic Report Provisioning</h4>
+                                <p class="text-xs text-gray-400">Compiles system findings into comprehensive operational summaries to support urban traffic management decisions.</p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Architecture Table -->
+                    <section>
+                        <h2 class="text-2xl font-bold mb-8">Technical Architecture Summary</h2>
+                        <div class="overflow-x-auto rounded-2xl border border-white/10">
+                            <table class="w-full text-left border-collapse">
+                                <thead>
+                                    <tr class="bg-accent/5 border-b border-white/10">
+                                        <th class="p-4 text-xs font-bold uppercase tracking-widest text-accent">Component Layer</th>
+                                        <th class="p-4 text-xs font-bold uppercase tracking-widest text-accent">Core Tech Stack</th>
+                                        <th class="p-4 text-xs font-bold uppercase tracking-widest text-accent">Primary Functional Purpose</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="text-sm text-gray-400">
+                                    <tr class="border-b border-white/5">
+                                        <td class="p-4 font-bold text-gray-200">Data Processing</td>
+                                        <td class="p-4">Python, Pandas Dataframes, NumPy Arrays</td>
+                                        <td class="p-4">Time-series formatting, error filtering, and large dataset manipulations.</td>
+                                    </tr>
+                                    <tr class="border-b border-white/5">
+                                        <td class="p-4 font-bold text-gray-200">Statistical Compute</td>
+                                        <td class="p-4">SciPy, Statsmodels Engine</td>
+                                        <td class="p-4">Flow rate aggregation, peak variance calculations, and trend identification.</td>
+                                    </tr>
+                                    <tr class="border-b border-white/5">
+                                        <td class="p-4 font-bold text-gray-200">Visualization Layer</td>
+                                        <td class="p-4">Matplotlib Library Engine</td>
+                                        <td class="p-4">Rendering traffic density graphs, peak hour flow lines, and velocity charts.</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="p-4 font-bold text-gray-200">Reporting Interface</td>
+                                        <td class="p-4">Markdown Reporting Frameworks</td>
+                                        <td class="p-4">Generating automated analytical reports to assist urban infrastructure planning.</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </section>
+                </div>
+
+                <!-- Right Column: Sidebar -->
+                <div class="lg:col-span-1">
+                    <div class="sticky top-32 space-y-8">
+                        <!-- Benchmarks -->
+                        <div class="bg-darkgray p-8 rounded-3xl border border-white/10">
+                            <h3 class="text-xl font-bold mb-6 text-white">Final Project Performance Benchmarks</h3>
+                            <div class="space-y-6">
+                                <div class="flex justify-between items-center">
+                                    <span class="text-xs text-gray-500 font-bold uppercase">Processing Efficiency</span>
+                                    <span class="text-accent font-bold">&lt; 800ms</span>
+                                </div>
+                                <div class="flex justify-between items-center">
+                                    <span class="text-xs text-gray-500 font-bold uppercase">Data Scale</span>
+                                    <span class="text-accent font-bold">100,000+ Rows</span>
+                                </div>
+                                <div class="flex justify-between items-center">
+                                    <span class="text-xs text-gray-500 font-bold uppercase">Reporting Accuracy</span>
+                                    <span class="text-accent font-bold">Zero Data Loss</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Role -->
+                        <div class="bg-darkgray p-8 rounded-3xl border border-white/10">
+                            <h3 class="text-xl font-bold mb-4 text-white">My Contribution</h3>
+                            <p class="text-sm text-gray-400 leading-relaxed">
+                                <span class="text-accent font-bold">Data Analyst (University Project).</span> Managed the data ingestion, cleaning, and visual analytics layers to derive actionable transportation insights.
+                            </p>
+                        </div>
+
+                        <!-- GitHub CTA -->
+                        <div class="bg-accent/5 p-8 rounded-3xl border border-accent/20">
+                            <h4 class="text-lg font-bold mb-4">View the Code</h4>
+                            <p class="text-sm text-gray-400 mb-6">Explore the data processing and trend identification algorithms on GitHub.</p>
+                            <a href="https://github.com/dilni" class="w-full py-4 bg-accent text-black rounded-xl font-bold flex items-center justify-center gap-3 hover:brightness-110 transition-all">
+                                <i class="fa-brands fa-github text-lg"></i> GitHub Repository
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="py-12 border-t border-white/5">
+        <div class="max-w-7xl mx-auto px-6 text-center text-gray-500 text-sm">
+            <p>&copy; 2026 Dilni Rohansi Wijesinghe. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

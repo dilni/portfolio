@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Campus - Project Details</title>
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        accent: '#c7b28b',
+                        darkgray: '#1a1a1a',
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-black text-white antialiased selection:bg-accent selection:text-white">
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 bg-black/70 backdrop-blur-md border-b border-white/10 py-4">
+        <div class="max-w-7xl mx-auto px-6 flex justify-between items-center">
+            <a href="index.html" class="text-xl font-bold tracking-wider text-white">Dilni<span class="text-accent">.</span></a>
+            <a href="index.html#experience" class="text-sm font-medium hover:text-accent transition-colors flex items-center gap-2">
+                <i class="fa-solid fa-arrow-left text-xs"></i> Back to Projects
+            </a>
+        </div>
+    </nav>
+
+    <main class="pt-32 pb-24">
+        <div class="max-w-7xl mx-auto px-6">
+            <!-- Header Section -->
+            <div class="mb-12">
+                <div class="flex items-center gap-3 mb-4">
+                    <span class="px-3 py-1 bg-accent/10 text-accent border border-accent/20 rounded-full text-xs font-bold uppercase tracking-widest">University Project</span>
+                    <span class="text-gray-500 text-xs font-medium">IIT & University of Westminster</span>
+                </div>
+                <h1 class="text-4xl md:text-6xl font-bold mb-6">Smart Campus – <span class="text-accent">Sensor & Room Management</span></h1>
+                <p class="text-gray-400 text-xl max-w-4xl leading-relaxed">
+                    A scalable university infrastructure management platform designed to monitor campus facilities through intelligent sensor integration and centralized RESTful room management.
+                </p>
+            </div>
+
+            <!-- Project Hero -->
+            <div class="relative w-full h-[300px] md:h-[500px] bg-darkgray/50 rounded-3xl overflow-hidden border border-white/10 mb-16 group flex items-center justify-center">
+                <div class="absolute inset-0 bg-gradient-to-br from-accent/10 to-transparent opacity-50"></div>
+                <div class="relative z-10 text-center">
+                    <div class="w-24 h-24 bg-accent/20 rounded-full flex items-center justify-center border border-accent/40 mb-6 mx-auto group-hover:scale-110 transition-transform duration-500">
+                        <i class="fa-solid fa-building-circle-check text-4xl text-accent"></i>
+                    </div>
+                    <p class="text-accent font-bold tracking-[0.2em] uppercase text-sm">Distributed Systems & REST API Development</p>
+                </div>
+            </div>
+
+            <div class="grid lg:grid-cols-3 gap-12">
+                <!-- Left Column: Detailed Content -->
+                <div class="lg:col-span-2 space-y-20">
+                    <!-- Overview -->
+                    <section>
+                        <h2 class="text-3xl font-bold mb-6">Project Overview</h2>
+                        <p class="text-gray-400 leading-relaxed text-lg mb-6">
+                            The system provides a RESTful API architecture that enables administrators to manage rooms, monitor environmental conditions (Temperature, CO₂), and process real-time sensor readings across multiple campus locations.
+                        </p>
+                    </section>
+
+                    <!-- 1. Backend API -->
+                    <section class="space-y-8">
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 bg-accent/10 rounded-2xl flex items-center justify-center text-accent">
+                                <i class="fa-solid fa-gears text-xl"></i>
+                            </div>
+                            <h2 class="text-2xl font-bold">1. Core Backend API Component <span class="text-accent/60 text-lg font-normal block md:inline">(The System Engine)</span></h2>
+                        </div>
+                        <p class="text-gray-400 leading-relaxed">The backend serves as the central processing layer responsible for managing rooms, sensors, and environmental monitoring data.</p>
+                        
+                        <div class="grid gap-6">
+                            <div class="bg-darkgray p-6 rounded-2xl border border-white/5 hover:border-accent/20 transition-colors">
+                                <h3 class="text-accent font-bold mb-2">RESTful API Architecture</h3>
+                                <p class="text-sm text-gray-400">Developed using Java JAX-RS (Jersey Framework). Implements resource-based endpoints for rooms, sensors, and readings with HATEOAS navigation.</p>
+                            </div>
+                            <div class="bg-darkgray p-6 rounded-2xl border border-white/5 hover:border-accent/20 transition-colors">
+                                <h3 class="text-accent font-bold mb-2">Room & Sensor Management</h3>
+                                <p class="text-sm text-gray-400">Manages campus room records and tracks environmental monitoring sensors (Temperature, CO₂). Maintains operational statuses: Active, Maintenance, Offline.</p>
+                            </div>
+                            <div class="bg-darkgray p-6 rounded-2xl border border-white/5 hover:border-accent/20 transition-colors">
+                                <h3 class="text-accent font-bold mb-2">Sensor Reading Processing</h3>
+                                <p class="text-sm text-gray-400">Records real-time environmental measurements dynamically. Stores timestamped information and supports sub-resource routing for sensor-specific readings.</p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- 2. Validation -->
+                    <section class="space-y-8">
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 bg-accent/10 rounded-2xl flex items-center justify-center text-accent">
+                                <i class="fa-solid fa-shield-check text-xl"></i>
+                            </div>
+                            <h2 class="text-2xl font-bold">2. Data Validation & Reliability Layer</h2>
+                        </div>
+                        <p class="text-gray-400 leading-relaxed">Comprehensive validation mechanisms to ensure system consistency and reliability.</p>
+                        
+                        <div class="grid sm:grid-cols-2 gap-6">
+                            <div class="bg-darkgray p-6 rounded-2xl border border-white/5 hover:border-accent/20 transition-colors">
+                                <h4 class="font-bold mb-2 text-white">Exception Handling Framework</h4>
+                                <p class="text-xs text-gray-400">Centralized exception mapping architecture that generates standardized API error responses and improves debugging efficiency.</p>
+                            </div>
+                            <div class="bg-darkgray p-6 rounded-2xl border border-white/5 hover:border-accent/20 transition-colors">
+                                <h4 class="font-bold mb-2 text-white">Resource Dependency Validation</h4>
+                                <p class="text-xs text-gray-400">Prevents sensors from being assigned to non-existent rooms and restricts deletion of rooms containing active sensors.</p>
+                            </div>
+                            <div class="bg-darkgray p-6 rounded-2xl border border-white/5 hover:border-accent/20 transition-colors sm:col-span-2">
+                                <h4 class="font-bold mb-2 text-white">Thread-Safe Processing</h4>
+                                <p class="text-xs text-gray-400">Designed to support concurrent user access. Protects shared in-memory collections from race conditions, ensuring consistent behavior.</p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- 3. HATEOAS -->
+                    <section class="space-y-8">
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 bg-accent/10 rounded-2xl flex items-center justify-center text-accent">
+                                <i class="fa-solid fa-link text-xl"></i>
+                            </div>
+                            <h2 class="text-2xl font-bold">3. Hypermedia Navigation (HATEOAS)</h2>
+                        </div>
+                        <p class="text-gray-400 leading-relaxed">Implements Hypermedia as the Engine of Application State (HATEOAS) to improve client-side navigation and discovery.</p>
+                        
+                        <div class="bg-darkgray/50 p-8 rounded-3xl border border-white/5 space-y-6">
+                            <div>
+                                <h4 class="font-bold text-white mb-2">Dynamic Resource Discovery</h4>
+                                <p class="text-sm text-gray-400">API responses include navigational links, allowing clients to discover available resources dynamically without external documentation.</p>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-white mb-2">Self-Descriptive Responses</h4>
+                                <p class="text-sm text-gray-400">Contextual resource information improves API usability and scalability for integration with external applications.</p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- 4. Testing & Integration -->
+                    <section class="space-y-8">
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 bg-accent/10 rounded-2xl flex items-center justify-center text-accent">
+                                <i class="fa-solid fa-vial-circle-check text-xl"></i>
+                            </div>
+                            <h2 class="text-2xl font-bold">4. Testing & Integration Component</h2>
+                        </div>
+                        <p class="text-gray-400 leading-relaxed">The system was extensively tested using enterprise-grade API development and testing tools.</p>
+                        
+                        <div class="grid sm:grid-cols-2 gap-6">
+                            <div class="bg-darkgray p-6 rounded-2xl border border-white/5 hover:border-accent/20 transition-colors">
+                                <h4 class="font-bold mb-2 text-white">API Validation</h4>
+                                <p class="text-xs text-gray-400">Endpoint testing through Postman, including request-response verification and error scenario simulation.</p>
+                            </div>
+                            <div class="bg-darkgray p-6 rounded-2xl border border-white/5 hover:border-accent/20 transition-colors">
+                                <h4 class="font-bold mb-2 text-white">Integration Testing</h4>
+                                <p class="text-xs text-gray-400">Validation of room-sensor relationships, reading submissions, and state transition for sensor statuses.</p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Architecture Table -->
+                    <section>
+                        <h2 class="text-2xl font-bold mb-8">Technical Architecture Summary</h2>
+                        <div class="overflow-x-auto rounded-2xl border border-white/10">
+                            <table class="w-full text-left border-collapse">
+                                <thead>
+                                    <tr class="bg-accent/5 border-b border-white/10">
+                                        <th class="p-4 text-xs font-bold uppercase tracking-widest text-accent">Component Layer</th>
+                                        <th class="p-4 text-xs font-bold uppercase tracking-widest text-accent">Core Tech Stack</th>
+                                        <th class="p-4 text-xs font-bold uppercase tracking-widest text-accent">Primary Functional Purpose</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="text-sm text-gray-400">
+                                    <tr class="border-b border-white/5">
+                                        <td class="p-4 font-bold text-gray-200">Backend API</td>
+                                        <td class="p-4">Java, JAX-RS (Jersey), Maven</td>
+                                        <td class="p-4">RESTful service development and request handling.</td>
+                                    </tr>
+                                    <tr class="border-b border-white/5">
+                                        <td class="p-4 font-bold text-gray-200">Data Processing</td>
+                                        <td class="p-4">Java Collections Framework</td>
+                                        <td class="p-4">Resource storage and management using thread-safe collections.</td>
+                                    </tr>
+                                    <tr class="border-b border-white/5">
+                                        <td class="p-4 font-bold text-gray-200">API Standards</td>
+                                        <td class="p-4">REST, HATEOAS</td>
+                                        <td class="p-4">Resource navigation and self-descriptive communication.</td>
+                                    </tr>
+                                    <tr class="border-b border-white/5">
+                                        <td class="p-4 font-bold text-gray-200">Testing Tools</td>
+                                        <td class="p-4">Postman, cURL</td>
+                                        <td class="p-4">Endpoint validation and integration testing.</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="p-4 font-bold text-gray-200">Exception Management</td>
+                                        <td class="p-4">JAX-RS Exception Mappers</td>
+                                        <td class="p-4">Error handling and standardized response generation.</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </section>
+                </div>
+
+                <!-- Right Column: Sidebar -->
+                <div class="lg:col-span-1">
+                    <div class="sticky top-32 space-y-8">
+                        <!-- Benchmarks -->
+                        <div class="bg-darkgray p-8 rounded-3xl border border-white/10">
+                            <h3 class="text-xl font-bold mb-6 text-white">Project Performance</h3>
+                            <div class="space-y-6">
+                                <div class="flex justify-between items-center">
+                                    <span class="text-xs text-gray-500 font-bold uppercase">Architecture</span>
+                                    <span class="text-accent font-bold">RESTful / JAX-RS</span>
+                                </div>
+                                <div class="flex justify-between items-center">
+                                    <span class="text-xs text-gray-500 font-bold uppercase">Validation</span>
+                                    <span class="text-accent font-bold">Enterprise Standard</span>
+                                </div>
+                                <div class="flex justify-between items-center">
+                                    <span class="text-xs text-gray-500 font-bold uppercase">Navigation</span>
+                                    <span class="text-accent font-bold">HATEOAS Enabled</span>
+                                </div>
+                                <div class="flex justify-between items-center">
+                                    <span class="text-xs text-gray-500 font-bold uppercase">Reliability</span>
+                                    <span class="text-accent font-bold">Thread-Safe</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Role -->
+                        <div class="bg-darkgray p-8 rounded-3xl border border-white/10">
+                            <h3 class="text-xl font-bold mb-4 text-white">My Contribution</h3>
+                            <p class="text-sm text-gray-400 leading-relaxed">
+                                <span class="text-accent font-bold">Backend Developer & API Engineer.</span> Designed and implemented RESTful endpoints, room-sensor management logic, and the centralized exception-handling framework.
+                            </p>
+                        </div>
+
+                        <!-- GitHub CTA -->
+                        <div class="bg-accent/5 p-8 rounded-3xl border border-accent/20">
+                            <h4 class="text-lg font-bold mb-4">View the Code</h4>
+                            <p class="text-sm text-gray-400 mb-6">Explore the Java implementation and REST API architecture on GitHub.</p>
+                            <a href="https://github.com/dilni" class="w-full py-4 bg-accent text-black rounded-xl font-bold flex items-center justify-center gap-3 hover:brightness-110 transition-all">
+                                <i class="fa-brands fa-github text-lg"></i> GitHub Repository
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="py-12 border-t border-white/5">
+        <div class="max-w-7xl mx-auto px-6 text-center text-gray-500 text-sm">
+            <p>&copy; 2026 Dilni Rohansi Wijesinghe. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
