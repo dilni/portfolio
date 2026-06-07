@@ -34,16 +34,21 @@ app.add_middleware(
 CV_CONTEXT = """
 Name: Dilni Rohansi Wijesinghe
 Identity: Level 5 Computer Science undergraduate at IIT / University of Westminster.
-Leadership: Founder & CTO / Head of Engineering at Tirl-Ops, focused on core codebase execution.
+Leadership: Founder & CTO / Head of Engineering at Tirl-Ops.
 Education:
 - BSc (Hons) Computer Science at Westminster University (Sep 2024 – Present). Modules include Machine Learning, Database Systems, Algorithms, Web Application Development, Client-Server Architecture, OOP, and Software Development.
 - GCE Advanced Level (Biological Science) at Mahanama National College Monaragala (February 2024). Results: Biology - C, Chemistry - B, Physics - S.
 - Certifications: Oracle Cloud Infrastructure 2025 Certified AI Foundations Associate, Java Programming for Beginners (2024).
 Core Projects:
-- Harvextro: An agricultural sorting robot arm using Python, OpenCV, and YOLOv8n to route Scotch Bonnet chilis into Red, Green, Yellow, and Mix buckets.
-- Loan Approval & Limit Prediction System: Achieved a 99.9% prediction accuracy using an ensemble voting classifier in 2026.
-- Graph Cycle Detector: Java-based tool using Sink Elimination and Depth First Search (DFS).
-- Smart Campus Management API: Built with Java JAX-RS and Maven.
+- Smart Campus: Sensor & Room Management System: Designed and implemented a scalable RESTful API architecture using Java JAX-RS and Maven. Features include HATEOAS navigation, centralized exception handling, and thread-safe processing for campus-wide environmental monitoring (CO2 & Temperature).
+- AI_Study_Buddy (Intelligent Learning Workspace): Lead Developer & Architect. Built an AI-powered academic ecosystem using TanStack Start (React 19), OpenRouter, and Supabase. Features local edge-side text extraction (PDF.js, Mammoth.js), context-aware tutoring (16,000 char window), automated MCQ generation, and a custom PDF export engine.
+- Tirl-Ops (Native Task Orchestration Platform): Co-Founder & CTO. Architected a native desktop ecosystem using Electron.js and React 19. Implemented real-time task orchestration, Kanban workflows, and data-driven team analytics with sub-10ms state updates and 60 FPS UI performance.
+- Harvextro: Autonomous Harvesting Robot Arm. Developed a YOLOv8 Nano–based computer vision model to detect and classify Scotch Bonnet chilies by ripeness for autonomous sorting. Managed primary dataset collection from commercial farms across Sri Lanka.
+- Loan Approval & Limit Prediction System: Developed a loan approval and credit limit prediction system using an ensemble voting classifier, achieving 99.9% classification accuracy.
+- Graph Cycle Detector Application: A highly optimized Java utility built to analyze complex topological networks. Implemented iterative Sink Elimination and recursive DFS algorithms with optimal linear time complexity ($O(V + E)$).
+- Air Quality, Weather & Respiratory Health Analysis: Built predictive linear regression models mapping pollution fluctuations to hospital admission spikes using Pandas and Scikit-learn.
+- Traffic Data Analysis Application (2024): Analyzed municipal transportation datasets (100,000+ rows) to map congestion zones using Pandas and Matplotlib.
+- EcoSpark - Climate Action Website (2024): An interactive 8-page responsive web application for climate awareness (UN SDG 13), built with high-performance semantic HTML5/CSS3.
 """
 
 SYSTEM_INSTRUCTION = f"""

@@ -1,22 +1,27 @@
-﻿﻿// script.js
+﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿// script.js
 
-// --- Certificate Modal Logic ---
+// --- Certificate Modal Logic (Now opens in new centered window) ---
 function openCertModal(imageSrc, title) {
-    const modal = document.getElementById('cert-modal');
-    const modalImg = document.getElementById('modal-image');
-    const modalTitle = document.getElementById('modal-title');
-    
-    modalImg.src = imageSrc;
-    modalTitle.textContent = title;
-    
-    modal.classList.remove('hidden');
-    document.body.style.overflow = 'hidden'; // Prevent background scrolling
+    let width = 1000;
+    let height = 750;
+
+    // Adjust size for badges which are typically square
+    if (title.toLowerCase().includes('badge')) {
+        width = 600;
+        height = 600;
+    }
+
+    const left = (window.screen.width - width) / 2;
+    const top = (window.screen.height - height) / 2;
+
+    window.open(imageSrc, '_blank', `width=${width},height=${height},top=${top},left=${left},resizable=yes,scrollbars=yes`);
 }
 
 function closeCertModal() {
+    // This is no longer needed but kept for compatibility if called elsewhere
     const modal = document.getElementById('cert-modal');
-    modal.classList.add('hidden');
-    document.body.style.overflow = ''; // Restore scrolling
+    if (modal) modal.classList.add('hidden');
+    document.body.style.overflow = ''; 
 }
 
 // --- Mobile Menu Toggle ---
