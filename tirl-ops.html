@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tirl-Ops - Project Details</title>
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        accent: '#c7b28b',
+                        darkgray: '#1a1a1a',
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-black text-white antialiased selection:bg-accent selection:text-white">
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 bg-black/70 backdrop-blur-md border-b border-white/10 py-4">
+        <div class="max-w-7xl mx-auto px-6 flex justify-between items-center">
+            <a href="index.html" class="text-xl font-bold tracking-wider text-white">Dilni<span class="text-accent">.</span></a>
+            <a href="index.html#experience" class="text-sm font-medium hover:text-accent transition-colors flex items-center gap-2">
+                <i class="fa-solid fa-arrow-left text-xs"></i> Back to Projects
+            </a>
+        </div>
+    </nav>
+
+    <main class="pt-32 pb-24">
+        <div class="max-w-7xl mx-auto px-6">
+            <!-- Header Section -->
+            <div class="mb-12">
+                <div class="flex items-center gap-3 mb-4">
+                    <span class="px-3 py-1 bg-accent/10 text-accent border border-accent/20 rounded-full text-xs font-bold uppercase tracking-widest">Founder & CTO Role</span>
+                    <br><span class="text-gray-500 text-xs font-medium">Enterprise Desktop Solutions</span>
+                </div>
+                <h1 class="text-4xl md:text-5xl font-bold mb-6">Tirl-Ops – <span class="text-accent">Native Task Orchestration Platform</span></h1>
+                <p class="text-gray-400 text-lg max-w-6xl leading-relaxed">
+                    A high-performance, native desktop ecosystem engineered for seamless project management and real-time team collaboration.
+                </p>
+            </div>
+
+            <!-- Project Hero Slider -->
+            <div class="relative w-full h-[300px] md:h-[500px] bg-darkgray/50 rounded-3xl overflow-hidden border border-white/10 mb-16 group flex items-center justify-center">
+                <!-- Slides Container -->
+                <div id="hero-slider" class="absolute inset-0">
+                 <!-- Blurred Background for sides -->
+                <div class="absolute inset-0 bg-cover bg-center blur-3xl scale-110 opacity-30 transition-transform duration-700 group-hover:scale-125" style="background-image: url('Harvextro_1.jpeg');"></div>
+
+                    <!-- Slides -->
+                    <div class="hero-slide absolute inset-0 opacity-100 transition-all duration-700 flex items-center justify-center">
+                        <img src="tirl-ops_1.png" alt="Tirl-Ops Slide 1" class="relative z-10 w-full h-full object-contain group-hover:scale-[1.02] transition-transform duration-700">
+                    </div>
+                    <div class="hero-slide absolute inset-0 opacity-0 transition-all duration-700 flex items-center justify-center translate-x-8">
+                        <img src="tirl-ops_2.png" alt="Tirl-Ops Slide 2" class="relative z-10 w-full h-full object-contain group-hover:scale-[1.02] transition-transform duration-700">
+                    </div>
+                    <div class="hero-slide absolute inset-0 opacity-0 transition-all duration-700 flex items-center justify-center translate-x-8">
+                        <img src="tirl-ops_3.png" alt="Tirl-Ops Slide 3" class="relative z-10 w-full h-full object-contain group-hover:scale-[1.02] transition-transform duration-700">
+                    </div>
+                    <div class="hero-slide absolute inset-0 opacity-0 transition-all duration-700 flex items-center justify-center translate-x-8">
+                        <img src="tirl-ops_4.png" alt="Tirl-Ops Slide 4" class="relative z-10 w-full h-full object-contain group-hover:scale-[1.02] transition-transform duration-700">
+                    </div>
+                    <div class="hero-slide absolute inset-0 opacity-0 transition-all duration-700 flex items-center justify-center translate-x-8">
+                        <img src="tirl-ops_5.png" alt="Tirl-Ops Slide 5" class="relative z-10 w-full h-full object-contain group-hover:scale-[1.02] transition-transform duration-700">
+                    </div>
+                    <div class="hero-slide absolute inset-0 opacity-0 transition-all duration-700 flex items-center justify-center translate-x-8">
+                        <img src="tirl-ops_6.png" alt="Tirl-Ops Slide 6" class="relative z-10 w-full h-full object-contain group-hover:scale-[1.02] transition-transform duration-700">
+                    </div>
+                    <div class="hero-slide absolute inset-0 opacity-0 transition-all duration-700 flex items-center justify-center translate-x-8">
+                        <img src="tirl-ops_7.png" alt="Tirl-Ops Slide 7" class="relative z-10 w-full h-full object-contain group-hover:scale-[1.02] transition-transform duration-700">
+                    </div>
+                    <div class="hero-slide absolute inset-0 opacity-0 transition-all duration-700 flex items-center justify-center translate-x-8">
+                        <img src="tirl-ops_8.png" alt="Tirl-Ops Slide 8" class="relative z-10 w-full h-full object-contain group-hover:scale-[1.02] transition-transform duration-700">
+                    </div>
+                    <div class="hero-slide absolute inset-0 opacity-0 transition-all duration-700 flex items-center justify-center translate-x-8">
+                        <img src="tirl-ops_9.png" alt="Tirl-Ops Slide 9" class="relative z-10 w-full h-full object-contain group-hover:scale-[1.02] transition-transform duration-700">
+                    </div>
+                    <div class="hero-slide absolute inset-0 opacity-0 transition-all duration-700 flex items-center justify-center translate-x-8">
+                        <img src="tirl-ops_10.png" alt="Tirl-Ops Slide 10" class="relative z-10 w-full h-full object-contain group-hover:scale-[1.02] transition-transform duration-700">
+                    </div>
+                    <div class="hero-slide absolute inset-0 opacity-0 transition-all duration-700 flex items-center justify-center translate-x-8">
+                        <img src="tirl-ops_11.png" alt="Tirl-Ops Slide 11" class="relative z-10 w-full h-full object-contain group-hover:scale-[1.02] transition-transform duration-700">
+                    </div>
+                </div>
+
+                <!-- Navigation Arrows -->
+                <button id="prev-slide" class="absolute left-6 top-1/2 -translate-y-1/2 w-14 h-14 rounded-full bg-black/60 backdrop-blur-md border border-white/10 text-white flex items-center justify-center hover:bg-accent hover:text-black transition-all z-30 opacity-0 group-hover:opacity-100">
+                    <i class="fa-solid fa-chevron-left text-xl"></i>
+                </button>
+                <button id="next-slide" class="absolute right-6 top-1/2 -translate-y-1/2 w-14 h-14 rounded-full bg-black/60 backdrop-blur-md border border-white/10 text-white flex items-center justify-center hover:bg-accent hover:text-black transition-all z-30 opacity-0 group-hover:opacity-100">
+                    <i class="fa-solid fa-chevron-right text-xl"></i>
+                </button>
+
+                <!-- Slide Counter -->
+                <div class="absolute bottom-8 left-1/2 -translate-x-1/2 px-6 py-2.5 bg-black/60 backdrop-blur-md rounded-full border border-white/10 text-sm font-bold text-white z-30 opacity-0 group-hover:opacity-100 transition-opacity">
+                    <span id="current-slide-num">1</span> / <span id="total-slides-num">11</span>
+                </div>
+            </div>
+
+            <div class="grid lg:grid-cols-3 gap-12">
+                <!-- Left Column: Detailed Content -->
+                <div class="lg:col-span-2 space-y-20">
+                    <!-- Overview -->
+                    <section>
+                        <h2 class="text-3xl font-bold mb-6">Project Overview</h2>
+                        <p class="text-gray-400 leading-relaxed text-lg mb-6">
+                            Tirl-Ops is a robust desktop environment that ensures low-latency performance and secure data interactions. It bridges web technologies with native OS capabilities to provide a professional standalone experience for team orchestration.
+                        </p>
+                    </section>
+
+                    <!-- 1. Infrastructure -->
+                    <section class="space-y-8">
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 bg-accent/10 rounded-2xl flex items-center justify-center text-accent">
+                                <i class="fa-solid fa-microchip text-xl"></i>
+                            </div>
+                            <h2 class="text-2xl font-bold">1. Desktop Application Infrastructure <span class="text-accent/60 text-lg font-normal block md:inline">(The Core Engine)</span></h2>
+                        </div>
+                        <p class="text-gray-400 leading-relaxed">The foundation of Tirl-Ops is built on native desktop integration and high-performance build systems.</p>
+                        
+                        <div class="grid gap-6">
+                            <div class="bg-darkgray p-6 rounded-2xl border border-white/5 hover:border-accent/20 transition-colors">
+                                <h3 class="text-accent font-bold mb-2">Native Desktop Integration</h3>
+                                <p class="text-sm text-gray-400">Developed using Electron.js to bridge web technologies with native OS capabilities, providing a standalone executable environment (Tirl-Ops.exe) with dedicated process management.</p>
+                            </div>
+                            <div class="bg-darkgray p-6 rounded-2xl border border-white/5 hover:border-accent/20 transition-colors">
+                                <h3 class="text-accent font-bold mb-2">Concurrent Execution Pipeline</h3>
+                                <p class="text-sm text-gray-400">Utilizes a sophisticated build system with Vite for lightning-fast HMR (Hot Module Replacement) and Electron-Builder for cross-platform distribution (Windows/NSIS).</p>
+                            </div>
+                            <div class="bg-darkgray p-6 rounded-2xl border border-white/5 hover:border-accent/20 transition-colors">
+                                <h3 class="text-accent font-bold mb-2">Responsive State Management</h3>
+                                <p class="text-sm text-gray-400">Implements a centralized React Context API architecture to handle complex global states, including authentication, theme preferences, and real-time task data synchronization.</p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- 2. Task Orchestration -->
+                    <section class="space-y-8">
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 bg-accent/10 rounded-2xl flex items-center justify-center text-accent">
+                                <i class="fa-solid fa-list-check text-xl"></i>
+                            </div>
+                            <h2 class="text-2xl font-bold">2. Task Orchestration & Workflow Component <span class="text-accent/60 text-lg font-normal block md:inline">(The Management Hub)</span></h2>
+                        </div>
+                        <p class="text-gray-400 leading-relaxed">A dynamic system designed to visualize and manipulate complex project lifecycles through intuitive interaction models.</p>
+                        
+                        <div class="grid sm:grid-cols-2 gap-6">
+                            <div class="bg-darkgray p-6 rounded-2xl border border-white/5 hover:border-accent/20 transition-colors">
+                                <h4 class="font-bold mb-2 text-white">Kanban Board Interface</h4>
+                                <p class="text-xs text-gray-400">Integrates @dnd-kit for a high-performance drag-and-drop experience, allowing users to transition tasks between workflow states within the Kanban view.</p>
+                            </div>
+                            <div class="bg-darkgray p-6 rounded-2xl border border-white/5 hover:border-accent/20 transition-colors">
+                                <h4 class="font-bold mb-2 text-white">Granular Task Lifecycle</h4>
+                                <p class="text-xs text-gray-400">Each task entity supports detailed metadata, priority levels, due date tracking, assignment logic, and persistent activity logs.</p>
+                            </div>
+                            <div class="bg-darkgray p-6 rounded-2xl border border-white/5 hover:border-accent/20 transition-colors sm:col-span-2">
+                                <h4 class="font-bold mb-2 text-white">My Workspace Cockpit</h4>
+                                <p class="text-xs text-gray-400">A personalized view for individual contributors to focus on assigned objectives and upcoming deadlines, reducing cognitive load.</p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- 3. Analytics -->
+                    <section class="space-y-8">
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 bg-accent/10 rounded-2xl flex items-center justify-center text-accent">
+                                <i class="fa-solid fa-chart-pie text-xl"></i>
+                            </div>
+                            <h2 class="text-2xl font-bold">3. Analytics & Team Insights Component <span class="text-accent/60 text-lg font-normal block md:inline">(The Intelligence Layer)</span></h2>
+                        </div>
+                        <p class="text-gray-400 leading-relaxed">A data-driven interface providing transparency into team capacity, project health, and historical performance.</p>
+                        
+                        <div class="grid sm:grid-cols-2 gap-6">
+                            <div class="bg-darkgray p-6 rounded-2xl border border-white/5 hover:border-accent/20 transition-colors">
+                                <h4 class="font-bold mb-2 text-white">Real-Time Productivity Dashboard</h4>
+                                <p class="text-xs text-gray-400">Features interactive visualization layers built with Recharts, displaying task distribution and team-wide productivity metrics.</p>
+                            </div>
+                            <div class="bg-darkgray p-6 rounded-2xl border border-white/5 hover:border-accent/20 transition-colors">
+                                <h4 class="font-bold mb-2 text-white">Member Availability Tracker</h4>
+                                <p class="text-xs text-gray-400">A live monitoring system that derives member status (Available, Away, In Progress) based on active task loads and manual overrides.</p>
+                            </div>
+                            <div class="bg-darkgray p-6 rounded-2xl border border-white/5 hover:border-accent/20 transition-colors sm:col-span-2">
+                                <h4 class="font-bold mb-2 text-white">Operational Reporting</h4>
+                                <p class="text-xs text-gray-400">Includes automated report generation tools using the xlsx library to aggregate historical task data for sprint velocity insights.</p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Architecture Table -->
+                    <section>
+                        <h2 class="text-2xl font-bold mb-8">Technical Architecture Summary</h2>
+                        <div class="overflow-x-auto rounded-2xl border border-white/10">
+                            <table class="w-full text-left border-collapse">
+                                <thead>
+                                    <tr class="bg-accent/5 border-b border-white/10">
+                                        <th class="p-4 text-xs font-bold uppercase tracking-widest text-accent">Component Layer</th>
+                                        <th class="p-4 text-xs font-bold uppercase tracking-widest text-accent">Core Tech Stack</th>
+                                        <th class="p-4 text-xs font-bold uppercase tracking-widest text-accent">Primary Functional Purpose</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="text-sm text-gray-400">
+                                    <tr class="border-b border-white/5">
+                                        <td class="p-4 font-bold text-gray-200">Desktop Core</td>
+                                        <td class="p-4">Electron, Vite, Node.js</td>
+                                        <td class="p-4">Native OS execution, lifecycle management, and build orchestration.</td>
+                                    </tr>
+                                    <tr class="border-b border-white/5">
+                                        <td class="p-4 font-bold text-gray-200">UI Framework</td>
+                                        <td class="p-4">React 19, Tailwind CSS 4, Lucide React</td>
+                                        <td class="p-4">Declarative UI components, modern styling, and iconography.</td>
+                                    </tr>
+                                    <tr class="border-b border-white/5">
+                                        <td class="p-4 font-bold text-gray-200">Workflow Engine</td>
+                                        <td class="p-4">@dnd-kit (Core, Sortable)</td>
+                                        <td class="p-4">Drag-and-drop kanban board and list sorting logic.</td>
+                                    </tr>
+                                    <tr class="border-b border-white/5">
+                                        <td class="p-4 font-bold text-gray-200">Data & Analytics</td>
+                                        <td class="p-4">Recharts, React Context, xlsx</td>
+                                        <td class="p-4">Visual data charting, global state management, and report exports.</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="p-4 font-bold text-gray-200">Infrastructure</td>
+                                        <td class="p-4">JavaScript (ESM), PostCSS, ESLint</td>
+                                        <td class="p-4">Modern module handling, CSS transformation, and code quality enforcement.</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </section>
+                </div>
+
+                <!-- Right Column: Sidebar -->
+                <div class="lg:col-span-1">
+                    <div class="sticky top-32 space-y-8">
+                        <!-- Benchmarks -->
+                        <div class="bg-darkgray p-8 rounded-3xl border border-white/10">
+                            <h3 class="text-xl font-bold mb-6 text-white">Performance Benchmarks</h3>
+                            <div class="space-y-6">
+                                <div class="flex justify-between items-center">
+                                    <span class="text-xs text-gray-500 font-bold uppercase">Application Boot</span>
+                                    <span class="text-accent font-bold">&lt; 1.5s</span>
+                                </div>
+                                <div class="flex justify-between items-center">
+                                    <span class="text-xs text-gray-500 font-bold uppercase">State Update</span>
+                                    <span class="text-accent font-bold">&lt; 10ms</span>
+                                </div>
+                                <div class="flex justify-between items-center">
+                                    <span class="text-xs text-gray-500 font-bold uppercase">UI Performance</span>
+                                    <span class="text-accent font-bold">60 FPS</span>
+                                </div>
+                                <div class="flex justify-between items-center">
+                                    <span class="text-xs text-gray-500 font-bold uppercase">Data Export</span>
+                                    <span class="text-accent font-bold">Sub-second</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Role -->
+                        <div class="bg-darkgray p-8 rounded-3xl border border-white/10">
+                            <h3 class="text-xl font-bold mb-4 text-white">My Contribution</h3>
+                            <p class="text-sm text-gray-400 leading-relaxed">
+                                <span class="text-accent font-bold">Founder & CTO / Head of Engineering.</span> Architected the core codebase and technical execution, leading the engineering vision from inception to production deployment.
+                            </p>
+                        </div>
+
+                        <!-- GitHub CTA -->
+                        <div class="bg-accent/5 p-8 rounded-3xl border border-accent/20">
+                            <h4 class="text-lg font-bold mb-4">View the Code</h4>
+                            <p class="text-sm text-gray-400 mb-6">Explore the Electron.js implementation and workflow orchestration engine on GitHub.</p>
+                            <a href="https://github.com/Tirl-Ops-Tech/tirl-member-management-system" class="w-full py-4 bg-accent text-black rounded-xl font-bold flex items-center justify-center gap-3 hover:brightness-110 transition-all">
+                                <i class="fa-brands fa-github text-lg"></i> GitHub Repository
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="py-12 border-t border-white/5">
+        <div class="max-w-7xl mx-auto px-6 text-center text-gray-500 text-sm">
+            <p>&copy; 2026 Dilni Rohansi Wijesinghe. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const slides = document.querySelectorAll('.hero-slide');
+            const prevBtn = document.getElementById('prev-slide');
+            const nextBtn = document.getElementById('next-slide');
+            const currentNum = document.getElementById('current-slide-num');
+            const totalNum = document.getElementById('total-slides-num');
+            
+            let currentSlide = 0;
+            const totalSlides = slides.length;
+            
+            // Set total count
+            if (totalNum) totalNum.textContent = totalSlides;
+            
+            function showSlide(index) {
+                slides.forEach((slide, i) => {
+                    if (i === index) {
+                        slide.style.opacity = '1';
+                        slide.style.transform = 'translateX(0)';
+                        slide.classList.remove('pointer-events-none');
+                    } else {
+                        slide.style.opacity = '0';
+                        slide.style.transform = i < index ? 'translateX(-2rem)' : 'translateX(2rem)';
+                        slide.classList.add('pointer-events-none');
+                    }
+                });
+                if (currentNum) currentNum.textContent = index + 1;
+            }
+            
+            if (nextBtn) {
+                nextBtn.addEventListener('click', () => {
+                    currentSlide = (currentSlide + 1) % totalSlides;
+                    showSlide(currentSlide);
+                });
+            }
+            
+            if (prevBtn) {
+                prevBtn.addEventListener('click', () => {
+                    currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+                    showSlide(currentSlide);
+                });
+            }
+
+            // Keyboard navigation
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'ArrowRight' && nextBtn) nextBtn.click();
+                if (e.key === 'ArrowLeft' && prevBtn) prevBtn.click();
+            });
+        });
+    </script>
+</body>
+</html>
