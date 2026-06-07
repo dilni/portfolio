@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HarveXtro - Project Details</title>
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        accent: '#c7b28b',
+                        darkgray: '#1a1a1a',
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-black text-white antialiased selection:bg-accent selection:text-white">
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 bg-black/70 backdrop-blur-md border-b border-white/10 py-4">
+        <div class="max-w-7xl mx-auto px-6 flex justify-between items-center">
+            <a href="index.html" class="text-xl font-bold tracking-wider text-white">Dilni<span class="text-accent">.</span></a>
+            <a href="index.html#experience" class="text-sm font-medium hover:text-accent transition-colors flex items-center gap-2">
+                <i class="fa-solid fa-arrow-left text-xs"></i> Back to Projects
+            </a>
+        </div>
+    </nav>
+
+    <main class="pt-32 pb-24">
+        <div class="max-w-7xl mx-auto px-6">
+            <!-- Header Section -->
+            <div class="mb-12">
+                <div class="flex items-center gap-3 mb-4">
+                    <span class="px-3 py-1 bg-accent/10 text-accent border border-accent/20 rounded-full text-xs font-bold uppercase tracking-widest">Group Software Development Project</span>
+                    <span class="text-gray-500 text-xs font-medium">IIT & University of Westminster</span>
+                </div>
+                <h1 class="text-4xl md:text-5xl font-bold mb-6">HarveXtro – <span class="text-accent">Autonomous Harvesting Robot Arm</span></h1>
+                <p class="text-gray-400 text-lg max-w-8xl leading-relaxed">
+                    An end-to-end smart agribusiness solution that combats agricultural labor shortages by automating the selective harvesting and ripeness sorting of Scotch Bonnet chilies.
+                </p>
+            </div>
+
+            <!-- Project Hero -->
+            <div class="relative w-full h-[300px] md:h-[550px] rounded-3xl overflow-hidden border border-white/10 mb-16 group bg-black/50">
+                <!-- Blurred Background for sides -->
+                <div class="absolute inset-0 bg-cover bg-center blur-3xl scale-110 opacity-30 transition-transform duration-700 group-hover:scale-125" style="background-image: url('Harvextro_1.jpeg');"></div>
+                <!-- Centered Main Image -->
+                <img src="Harvextro_1.jpeg" alt="HarveXtro Project" class="relative z-10 w-full h-full object-contain group-hover:scale-[1.02] transition-transform duration-700">
+            </div>
+
+            <div class="grid lg:grid-cols-3 gap-12">
+                <!-- Left Column: Detailed Content -->
+                <div class="lg:col-span-2 space-y-20">
+                    <!-- Overview -->
+                    <section>
+                        <h2 class="text-3xl font-bold mb-6 flex items-center gap-3">Project Overview</h2>
+                        <p class="text-gray-400 leading-relaxed text-lg mb-6">
+                            The HarveXtro ecosystem consists of a mobile-responsive web platform, a real-time mobile tracking app, and an edge-computing autonomous robot arm system.
+                        </p>
+                    </section>
+
+                    <!-- Pre-Project Phase -->
+                    <section class="space-y-8">
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 bg-accent/10 rounded-2xl flex items-center justify-center text-accent">
+                                <i class="fa-solid fa-magnifying-glass-chart text-xl"></i>
+                            </div>
+                            <h2 class="text-2xl font-bold">Project Analysis & Dataset Collection</h2>
+                        </div>
+                        <p class="text-gray-400 leading-relaxed">Before implementation, a rigorous analysis and data collection phase was conducted to ensure the system's viability and accuracy.</p>
+                        
+                        <div class="grid sm:grid-cols-2 gap-6">
+                            <div class="bg-darkgray p-6 rounded-2xl border border-white/5">
+                                <h4 class="font-bold mb-2 text-white">Comprehensive Project Analysis</h4>
+                                <p class="text-xs text-gray-400">Conducted in-depth feasibility studies, requirement gathering, and architectural planning before the development phase began.</p>
+                            </div>
+                            <div class="bg-darkgray p-6 rounded-2xl border border-white/5">
+                                <h4 class="font-bold mb-2 text-white">Proprietary Dataset Collection</h4>
+                                <p class="text-xs text-gray-400">Personally managed the collection of primary image data from commercial farms across Sri Lanka to train the YOLOv8n model on real-world conditions.</p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- 1. AI & Hardware -->
+                    <section class="space-y-8">
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 bg-accent/10 rounded-2xl flex items-center justify-center text-accent">
+                                <i class="fa-solid fa-eye text-xl"></i>
+                            </div>
+                            <h2 class="text-2xl font-bold">1. AI & Hardware Component <span class="text-accent/60 text-lg font-normal block md:inline">(The Muscles & Vision)</span></h2>
+                        </div>
+                        <p class="text-gray-400 leading-relaxed">This core edge-computing component processes environmental inputs and physically routes harvested produce into sorting arrays.</p>
+                        
+                        <div class="grid gap-6">
+                            <div class="bg-darkgray p-6 rounded-2xl border border-white/5 hover:border-accent/20 transition-colors">
+                                <h3 class="text-accent font-bold mb-2">Computer Vision Engine</h3>
+                                <p class="text-sm text-gray-400">Custom-trained YOLOv8n model built on a proprietary primary dataset collected from commercial farms across Sri Lanka. Operates at 8.4ms per frame with a mAP@0.50 of 0.9602.</p>
+                            </div>
+                            <div class="bg-darkgray p-6 rounded-2xl border border-white/5 hover:border-accent/20 transition-colors">
+                                <h3 class="text-accent font-bold mb-2">Edge Processing Platform</h3>
+                                <p class="text-sm text-gray-400">Executes frame pre-processing (416x416 resizing), draws contextual bounding boxes, and calculates spatial (X, Y) center points.</p>
+                            </div>
+                            <div class="bg-darkgray p-6 rounded-2xl border border-white/5 hover:border-accent/20 transition-colors">
+                                <h3 class="text-accent font-bold mb-2">Actuation Infrastructure</h3>
+                                <p class="text-sm text-gray-400">ESP32 drives worm gear motors on a wheeled chassis and coordinates vertical/horizontal linear actuators and high-torque servos for precision picking.</p>
+                            </div>
+                            <div class="bg-darkgray p-6 rounded-2xl border border-white/5 hover:border-accent/20 transition-colors">
+                                <h3 class="text-accent font-bold mb-2">Autonomous Color Sorting</h3>
+                                <p class="text-sm text-gray-400">A mechanical gripper verifies multi-class maturity thresholds via sensor logic and directs chilies into dedicated Red, Green, Yellow, or Mix sorting bins.</p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- 2. Mobile Application -->
+                    <section class="space-y-8">
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 bg-accent/10 rounded-2xl flex items-center justify-center text-accent">
+                                <i class="fa-solid fa-mobile-screen text-xl"></i>
+                            </div>
+                            <h2 class="text-2xl font-bold">2. Mobile Application Component <span class="text-accent/60 text-lg font-normal block md:inline">(The Remote Operations Hub)</span></h2>
+                        </div>
+                        <p class="text-gray-400 leading-relaxed">A high-performance cross-platform application constructed to give farmers live machine data visualization and remote operational controls.</p>
+                        
+                        <div class="grid sm:grid-cols-2 gap-6">
+                            <div class="bg-darkgray p-6 rounded-2xl border border-white/5">
+                                <h4 class="font-bold mb-2 text-white">Cross-Platform Architecture</h4>
+                                <p class="text-xs text-gray-400">Built using React Native to ensure seamless fluid rendering across Android and iOS deployments.</p>
+                            </div>
+                            <div class="bg-darkgray p-6 rounded-2xl border border-white/5">
+                                <h4 class="font-bold mb-2 text-white">Live Stream Integration</h4>
+                                <p class="text-xs text-gray-400">Incorporates a responsive WebView layout mapping real-time camera spot-feeds from the robot arm.</p>
+                            </div>
+                            <div class="bg-darkgray p-6 rounded-2xl border border-white/5">
+                                <h4 class="font-bold mb-2 text-white">Real-Time Analytical Dashboard</h4>
+                                <p class="text-xs text-gray-400">Uses a persistent listener to dynamically update progress charts, metrics, and logs from the database.</p>
+                            </div>
+                            <div class="bg-darkgray p-6 rounded-2xl border border-white/5">
+                                <h4 class="font-bold mb-2 text-white">System Action Toggles</h4>
+                                <p class="text-xs text-gray-400">Exposes triggers (Start, End, Pause, Emergency Stop) that execute asynchronous machine state updates.</p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- 3. Web Platform -->
+                    <section class="space-y-8">
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 bg-accent/10 rounded-2xl flex items-center justify-center text-accent">
+                                <i class="fa-solid fa-globe text-xl"></i>
+                            </div>
+                            <h2 class="text-2xl font-bold">3. Web Platform Component <span class="text-accent/60 text-lg font-normal block md:inline">(The Analytical Interface)</span></h2>
+                        </div>
+                        <div class="bg-darkgray/50 p-8 rounded-3xl border border-white/5 space-y-6">
+                            <div>
+                                <h4 class="font-bold text-white mb-2">Platform Functionality</h4>
+                                <p class="text-sm text-gray-400">Serves as the high-visibility project portal showcasing development repo components, software architectures, and performance validation graphs.</p>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-white mb-2">Data Aggregation Utilities</h4>
+                                <p class="text-sm text-gray-400">Integrates structured read operations querying historical data collections to construct daily farming reports and operational summaries.</p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Architecture Summary Table -->
+                    <section>
+                        <h2 class="text-2xl font-bold mb-8">Technical Architecture Summary</h2>
+                        <div class="overflow-x-auto rounded-2xl border border-white/10">
+                            <table class="w-full text-left border-collapse">
+                                <thead>
+                                    <tr class="bg-accent/5 border-b border-white/10">
+                                        <th class="p-4 text-xs font-bold uppercase tracking-widest text-accent">Component Layer</th>
+                                        <th class="p-4 text-xs font-bold uppercase tracking-widest text-accent">Core Tech Stack</th>
+                                        <th class="p-4 text-xs font-bold uppercase tracking-widest text-accent">Primary Functional Purpose</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="text-sm text-gray-400">
+                                    <tr class="border-b border-white/5">
+                                        <td class="p-4 font-bold text-gray-200">AI / CV</td>
+                                        <td class="p-4">Python, YOLOv8n, OpenCV, TensorFlow</td>
+                                        <td class="p-4">Pre-processing, detection, and ripeness classification.</td>
+                                    </tr>
+                                    <tr class="border-b border-white/5">
+                                        <td class="p-4 font-bold text-gray-200">Hardware & IoT</td>
+                                        <td class="p-4">ESP32, C++, Motors, Sensors</td>
+                                        <td class="p-4">Movement, kinematic path planning, and gripper routing.</td>
+                                    </tr>
+                                    <tr class="border-b border-white/5">
+                                        <td class="p-4 font-bold text-gray-200">Mobile & Web</td>
+                                        <td class="p-4">React Native, JS, HTML5, CSS3</td>
+                                        <td class="p-4">Remote toggles, analytics, and live footage streams.</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="p-4 font-bold text-gray-200">Infrastructure</td>
+                                        <td class="p-4">Firebase, Node.js, Cloud Firestore</td>
+                                        <td class="p-4">Role validation, communication buffers, and state syncing.</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </section>
+
+                    <!-- Project Gallery -->
+                     <section>
+                         <h2 class="text-3xl font-bold mb-8 flex items-center gap-3">Project Gallery</h2>
+                         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                             <div class="group relative overflow-hidden rounded-3xl border border-white/10 aspect-video bg-darkgray">
+                                 <img src="Harvextro.jpeg" alt="HarveXtro Hardware" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 opacity-80 group-hover:opacity-100">
+                                 <div class="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/90 to-transparent">
+                                     <p class="text-accent font-bold text-sm tracking-wide">Prototype Hardware Architecture</p>
+                                 </div>
+                             </div>
+                             <div class="group relative overflow-hidden rounded-3xl border border-white/10 aspect-video bg-darkgray">
+                                 <img src="Harvextro_2.jpeg" alt="HarveXtro Field Work" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 opacity-80 group-hover:opacity-100">
+                                 <div class="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/90 to-transparent">
+                                     <p class="text-accent font-bold text-sm tracking-wide">Prototype Deployment & Performance Analysis</p>
+                                 </div>
+                             </div>
+                         </div>
+                     </section>
+
+                     <!-- Pitch Document Slider -->
+                       <section>
+                           <h2 class="text-3xl font-bold mb-8 flex items-center gap-3">Pitch Presentation</h2>
+ 
+                           <div class="relative group">
+                               <div id="pitch-slider" class="relative overflow-hidden rounded-3xl border border-white/10 bg-darkgray aspect-[16/11] md:aspect-[16/9]">
+                                   <!-- Slides -->
+                                   <div class="pitch-slide absolute inset-0 opacity-100 transition-opacity duration-500 flex items-center justify-center">
+                                       <img src="harvextro_pitch_1.png" alt="Pitch Page 1" class="max-w-full max-h-full object-contain">
+                                   </div>
+                                   <div class="pitch-slide absolute inset-0 opacity-0 transition-opacity duration-500 flex items-center justify-center">
+                                       <img src="harvextro_pitch_2.png" alt="Pitch Page 2" class="max-w-full max-h-full object-contain">
+                                   </div>
+                                   <div class="pitch-slide absolute inset-0 opacity-0 transition-opacity duration-500 flex items-center justify-center">
+                                       <img src="harvextro_pitch_3.png" alt="Pitch Page 3" class="max-w-full max-h-full object-contain">
+                                   </div>
+                                   <div class="pitch-slide absolute inset-0 opacity-0 transition-opacity duration-500 flex items-center justify-center">
+                                       <img src="harvextro_pitch_4.png" alt="Pitch Page 4" class="max-w-full max-h-full object-contain">
+                                   </div>
+                                   <div class="pitch-slide absolute inset-0 opacity-0 transition-opacity duration-500 flex items-center justify-center">
+                                       <img src="harvextro_pitch_5.png" alt="Pitch Page 5" class="max-w-full max-h-full object-contain">
+                                   </div>
+                                   <div class="pitch-slide absolute inset-0 opacity-0 transition-opacity duration-500 flex items-center justify-center">
+                                       <img src="harvextro_pitch_6.png" alt="Pitch Page 6" class="max-w-full max-h-full object-contain">
+                                   </div>
+                                   <div class="pitch-slide absolute inset-0 opacity-0 transition-opacity duration-500 flex items-center justify-center">
+                                       <img src="harvextro_pitch_7.png" alt="Pitch Page 7" class="max-w-full max-h-full object-contain">
+                                   </div>
+                                   <div class="pitch-slide absolute inset-0 opacity-0 transition-opacity duration-500 flex items-center justify-center">
+                                       <img src="harvextro_pitch_8.png" alt="Pitch Page 8" class="max-w-full max-h-full object-contain">
+                                   </div>
+                                   <div class="pitch-slide absolute inset-0 opacity-0 transition-opacity duration-500 flex items-center justify-center">
+                                       <img src="harvextro_pitch_9.png" alt="Pitch Page 9" class="max-w-full max-h-full object-contain">
+                                   </div>
+                                   <div class="pitch-slide absolute inset-0 opacity-0 transition-opacity duration-500 flex items-center justify-center">
+                                       <img src="harvextro_pitch_10.png" alt="Pitch Page 10" class="max-w-full max-h-full object-contain">
+                                   </div>
+                               </div>
+                               
+                               <!-- Navigation Arrows (Sides) -->
+                               <button id="prev-slide" class="absolute left-4 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-black/40 backdrop-blur-md border border-white/10 flex items-center justify-center text-white hover:bg-accent hover:text-black transition-all z-30 opacity-0 group-hover:opacity-100 shadow-xl">
+                                   <i class="fa-solid fa-chevron-left"></i>
+                               </button>
+                               <button id="next-slide" class="absolute right-4 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-black/40 backdrop-blur-md border border-white/10 flex items-center justify-center text-white hover:bg-accent hover:text-black transition-all z-30 opacity-0 group-hover:opacity-100 shadow-xl">
+                                   <i class="fa-solid fa-chevron-right"></i>
+                               </button>
+
+                               <!-- Slide Indicator -->
+                                <div class="absolute bottom-6 right-6 px-4 py-2 bg-black/50 backdrop-blur-md rounded-full border border-white/10 flex gap-2 z-20">
+                                    <span id="current-slide-num" class="text-accent font-bold text-xs">1</span>
+                                    <span class="text-gray-500 text-xs">/</span>
+                                    <span class="text-gray-400 font-medium text-xs">10</span>
+                                </div>
+                           </div>
+                           <p class="text-center text-gray-500 text-xs mt-4 italic">Tip: Use your keyboard arrow keys or the buttons on the image sides</p>
+                       </section>
+                  </div>
+
+                <!-- Right Column: Sidebar -->
+                <div class="lg:col-span-1">
+                    <div class="sticky top-32 space-y-8">
+                        <!-- Benchmarks -->
+                        <div class="bg-darkgray p-8 rounded-3xl border border-white/10">
+                            <h3 class="text-xl font-bold mb-6 text-white">Performance Benchmarks</h3>
+                            <div class="space-y-6">
+                                <div class="flex justify-between items-center">
+                                    <span class="text-xs text-gray-500 font-bold uppercase">Inference Speed</span>
+                                    <span class="text-accent font-bold">8.4 ms</span>
+                                </div>
+                                <div class="flex justify-between items-center">
+                                    <span class="text-xs text-gray-500 font-bold uppercase">AI Accuracy</span>
+                                    <span class="text-accent font-bold">96.02% mAP</span>
+                                </div>
+                                <div class="flex justify-between items-center">
+                                    <span class="text-xs text-gray-500 font-bold uppercase">Cloud Sync Latency</span>
+                                    <span class="text-accent font-bold">1.2 s</span>
+                                </div>
+                                <div class="flex justify-between items-center">
+                                    <span class="text-xs text-gray-500 font-bold uppercase">Boot Speed</span>
+                                    <span class="text-accent font-bold">2-3 s</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Project Roles -->
+                        <div class="bg-darkgray p-8 rounded-3xl border border-white/10">
+                            <h3 class="text-xl font-bold mb-4 text-white">My Contribution</h3>
+                            <p class="text-sm text-gray-400 mb-4 leading-relaxed">
+                                <span class="text-accent font-bold">Project Coordinator & AI Developer.</span>
+                            </p>
+                            <ul class="text-xs text-gray-400 space-y-2 mb-4 list-disc list-inside">
+                                <li>End-to-end Project Analysis & Feasibility Studies.</li>
+                                <li>Primary Dataset Collection from commercial farms.</li>
+                                <li>Core AI Model Development (YOLOv8n).</li>
+                            </ul>
+                            <p class="text-xs text-gray-500 italic">
+                                * Hardware and frontend modules contributed by other team members.
+                            </p>
+                        </div>
+
+                        <!-- Project Links -->
+                        <div class="bg-accent/5 p-8 rounded-3xl border border-accent/20">
+                            <h4 class="text-lg font-bold mb-6 text-white">Project Links</h4>
+                            <div class="space-y-4">
+                                <a href="https://harvextro.org/"
+                                    class="w-full py-4 bg-accent text-black rounded-xl font-bold flex items-center justify-center gap-3 hover:brightness-110 transition-all">
+                                    <i class="fa-solid fa-globe text-lg"></i> Official Website
+                                </a>
+                                <a href="https://github.com/harvextro/harvextro-ai-model/tree/main/dilni"
+                                    class="w-full py-4 bg-black border border-white/10 text-white rounded-xl font-bold flex items-center justify-center gap-3 hover:border-accent hover:text-accent transition-all">
+                                    <i class="fa-brands fa-github text-lg"></i> GitHub Repository
+                                </a>
+                                <a href="https://www.linkedin.com/company/109545747"
+                                    class="w-full py-4 bg-[#0077b5] text-white rounded-xl font-bold flex items-center justify-center gap-3 hover:brightness-110 transition-all">
+                                    <i class="fa-brands fa-linkedin text-lg"></i> LinkedIn Page
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="py-12 border-t border-white/5">
+        <div class="max-w-7xl mx-auto px-6 text-center text-gray-500 text-sm">
+            <p>&copy; 2026 Dilni Rohansi Wijesinghe. All rights reserved.</p>
+        </div>
+    </footer>
+    <!-- Slider Logic -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const slides = document.querySelectorAll('.pitch-slide');
+            const currentNum = document.getElementById('current-slide-num');
+            const prevBtn = document.getElementById('prev-slide');
+            const nextBtn = document.getElementById('next-slide');
+            let currentIdx = 0;
+
+            function updateSlider(newIdx) {
+                // Remove active from current
+                slides[currentIdx].classList.remove('opacity-100');
+                slides[currentIdx].classList.add('opacity-0');
+                
+                // Set new index
+                currentIdx = (newIdx + slides.length) % slides.length;
+                
+                // Add active to new
+                slides[currentIdx].classList.remove('opacity-0');
+                slides[currentIdx].classList.add('opacity-100');
+                
+                // Update counter
+                currentNum.textContent = currentIdx + 1;
+            }
+
+            nextBtn.addEventListener('click', () => updateSlider(currentIdx + 1));
+            prevBtn.addEventListener('click', () => updateSlider(currentIdx - 1));
+
+            // Keyboard navigation
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'ArrowRight') updateSlider(currentIdx + 1);
+                if (e.key === 'ArrowLeft') updateSlider(currentIdx - 1);
+            });
+        });
+    </script>
+</body>
+</html>
