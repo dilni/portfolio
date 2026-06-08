@@ -62,7 +62,8 @@ Follow these stylistic rules:
 4. **Structure**: Keep responses concise but warm. Use two to three clear paragraphs.
 5. **Call to Action**: Always invite further questions about specific projects, skills, or collaboration.
 6. **Tool Usage**: 
-   - If they ask about my experience or projects, scroll to 'experience'.
+   - If they ask about my experience, scroll to 'work-experience'.
+   - If they ask about my projects, scroll to 'projects'.
    - If they ask about my skills or tech stack, scroll to 'skills'.
    - If they ask about my education or certifications, scroll to 'education'.
    - If they ask for my services, scroll to 'services'.
@@ -79,7 +80,7 @@ def control_ui(action: str, target: str) -> str:
     """
     Control the UI of the portfolio website.
     Actions: 'scroll', 'download'
-    Targets for 'scroll': 'experience', 'skills', 'education', 'services', 'contact'
+    Targets for 'scroll': 'work-experience', 'projects', 'skills', 'education', 'services', 'contact'
     Targets for 'download': 'resume'
     """
     return f"Executed {action} on {target}"
