@@ -1,4 +1,4 @@
-﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿<!DOCTYPE html>
+﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿<!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
 
 <head>
@@ -1053,92 +1053,121 @@
     </section>
 
     <!-- Advanced CTA Footer Section -->
-    <section id="contact" class="min-h-[80vh] flex flex-col justify-center border-t border-white/10 bg-[#0a0a0a] py-24 relative overflow-hidden">
-        <div class="absolute top-0 right-1/4 w-96 h-96 bg-accent/5 rounded-full blur-[100px] pointer-events-none"></div>
+    <section id="contact" class="min-h-screen flex flex-col justify-center bg-[#050505] py-24 relative overflow-hidden">
+        <!-- Abstract Wavy Background Elements -->
+        <div class="absolute top-0 right-0 w-full h-full pointer-events-none opacity-20">
+            <svg class="absolute top-0 right-0 w-1/2 h-1/2 text-accent/20" viewBox="0 0 100 100" fill="none">
+                <path d="M0 20C30 10 70 30 100 0" stroke="currentColor" stroke-width="0.5"/>
+                <path d="M0 40C40 20 80 50 100 10" stroke="currentColor" stroke-width="0.3"/>
+            </svg>
+            <svg class="absolute bottom-0 left-0 w-1/2 h-1/2 text-accent/20" viewBox="0 0 100 100" fill="none">
+                <path d="M100 80C70 90 30 70 0 100" stroke="currentColor" stroke-width="0.5"/>
+            </svg>
+        </div>
+
         <div class="max-w-7xl mx-auto px-6 relative z-10">
-            <!-- CTA Header -->
-            <div class="max-w-3xl mb-16 reveal">
-                <h2 class="text-4xl md:text-5xl font-bold mb-4">Get In <span class="text-accent">Touch</span></h2>
-                <div class="w-24 h-1.5 bg-accent mb-8 rounded-full"></div>
-                <p class="text-gray-400 mt-6 max-w-2xl text-lg leading-relaxed">
-                    Have a question, a project idea, or just want to say hello? Drop me a message below and I'll get back to you as soon as possible.
+            <!-- Header Section -->
+            <div class="mb-20 reveal">
+                <h2 class="text-5xl md:text-6xl font-bold mb-6 text-white">Get In <span class="bg-gradient-to-r from-accent to-[#e5d4b8] bg-clip-text text-transparent">Touch</span></h2>
+                <div class="w-32 h-1 bg-gradient-to-r from-accent to-transparent rounded-full mb-10"></div>
+                <p class="text-gray-400 max-w-2xl text-lg leading-relaxed font-medium">
+                    Have a question, a project idea, or just want to say hello?<br>
+                    Drop me a message below and I'll get back to you as soon as possible.
                 </p>
             </div>
 
-            <div class="grid lg:grid-cols-5 gap-12 reveal items-start">
-                <!-- Left Column: Form -->
-                <div class="lg:col-span-3">
-                    <form action="https://formspree.io/f/dilniwijesinghe@gmail.com" method="POST"
-                        class="bg-[#111111] p-8 md:p-12 rounded-[2rem] border border-white/5 relative overflow-hidden group shadow-2xl">
-                        
-                        <div class="grid md:grid-cols-2 gap-8 mb-8 relative z-10">
-                            <div>
-                                <label class="block text-xs font-bold text-gray-500 uppercase tracking-widest mb-3 ml-1">Name</label>
+            <div class="grid lg:grid-cols-12 gap-12 items-start">
+                <!-- Form Container (8 columns) -->
+                <div class="lg:col-span-8 bg-[#0a0a0a] p-10 md:p-14 rounded-[2.5rem] border border-white/5 shadow-[0_0_50px_rgba(199,178,139,0.05)] relative group">
+                    <!-- Subtle Glow Corner -->
+                    <div class="absolute top-0 left-0 w-32 h-32 bg-accent/5 rounded-full blur-[60px] group-hover:bg-accent/10 transition-colors"></div>
+                    
+                    <form action="https://formspree.io/f/dilniwijesinghe@gmail.com" method="POST" class="relative z-10">
+                        <div class="grid md:grid-cols-2 gap-10 mb-10">
+                            <div class="space-y-4">
+                                <label class="flex items-center gap-3 text-sm font-bold text-gray-400 uppercase tracking-widest ml-1">
+                                    <i class="fa-regular fa-user text-accent"></i> Name
+                                </label>
                                 <input type="text" name="name" placeholder="John Doe" required
-                                    class="w-full bg-black border border-white/5 rounded-2xl px-6 py-5 text-white placeholder-gray-700 focus:outline-none focus:border-accent/50 focus:bg-black/80 transition-all text-sm">
+                                    class="w-full bg-[#111111] border border-white/5 rounded-2xl px-6 py-5 text-white placeholder-gray-700 focus:outline-none focus:border-accent/30 focus:shadow-[0_0_20px_rgba(199,178,139,0.1)] transition-all">
                             </div>
-                            <div>
-                                <label class="block text-xs font-bold text-gray-500 uppercase tracking-widest mb-3 ml-1">Email</label>
+                            <div class="space-y-4">
+                                <label class="flex items-center gap-3 text-sm font-bold text-gray-400 uppercase tracking-widest ml-1">
+                                    <i class="fa-regular fa-envelope text-accent"></i> Email
+                                </label>
                                 <input type="email" name="email" placeholder="john@example.com" required
-                                    class="w-full bg-black border border-white/5 rounded-2xl px-6 py-5 text-white placeholder-gray-700 focus:outline-none focus:border-accent/50 focus:bg-black/80 transition-all text-sm">
+                                    class="w-full bg-[#111111] border border-white/5 rounded-2xl px-6 py-5 text-white placeholder-gray-700 focus:outline-none focus:border-accent/30 focus:shadow-[0_0_20px_rgba(199,178,139,0.1)] transition-all">
                             </div>
                         </div>
-                        <div class="mb-10 relative z-10">
-                            <label class="block text-xs font-bold text-gray-500 uppercase tracking-widest mb-3 ml-1">Message</label>
+
+                        <div class="mb-12 space-y-4">
+                            <label class="flex items-center gap-3 text-sm font-bold text-gray-400 uppercase tracking-widest ml-1">
+                                <i class="fa-regular fa-comment-dots text-accent"></i> Message
+                            </label>
                             <textarea name="message" placeholder="Tell me about your project..." rows="6" required
-                                class="w-full bg-black border border-white/5 rounded-2xl px-6 py-5 text-white placeholder-gray-700 focus:outline-none focus:border-accent/50 focus:bg-black/80 transition-all resize-none text-sm leading-relaxed"></textarea>
+                                class="w-full bg-[#111111] border border-white/5 rounded-2xl px-6 py-5 text-white placeholder-gray-700 focus:outline-none focus:border-accent/30 focus:shadow-[0_0_20px_rgba(199,178,139,0.1)] transition-all resize-none leading-relaxed"></textarea>
                         </div>
+
                         <button type="submit"
-                            class="w-full bg-accent text-black font-black py-5 rounded-2xl transition-all duration-300 hover:brightness-110 hover:-translate-y-[3px] shadow-[0_10px_30px_rgba(199,178,139,0.2)] hover:shadow-[0_15px_40px_rgba(199,178,139,0.4)] flex items-center justify-center gap-3 relative z-10 uppercase tracking-widest text-sm">
+                            class="w-full bg-gradient-to-r from-accent via-[#d4c3a3] to-accent text-black font-black py-6 rounded-2xl transition-all duration-500 hover:brightness-110 hover:-translate-y-1 shadow-[0_15px_40px_rgba(199,178,139,0.3)] flex items-center justify-center gap-4 uppercase tracking-[0.2em] text-sm">
                             Send Message <i class="fa-solid fa-paper-plane text-xs"></i>
                         </button>
                     </form>
                 </div>
 
-                <!-- Right Column: Contact Cards -->
-                <div class="lg:col-span-2 flex flex-col gap-6">
+                <!-- Contact Info Column (4 columns) -->
+                <div class="lg:col-span-4 flex flex-col gap-6">
                     <!-- Email Card -->
                     <a href="mailto:dilniwijesinghe@gmail.com"
-                        class="group bg-[#111111] p-8 rounded-2xl border border-white/5 hover:border-accent/40 transition-all duration-300 hover:-translate-y-[3px] flex items-center gap-6 shadow-lg">
-                        <div
-                            class="w-14 h-14 bg-black rounded-2xl flex items-center justify-center border border-white/10 text-accent group-hover:bg-accent group-hover:text-black transition-all duration-500 shadow-inner flex-shrink-0">
-                            <i class="fa-solid fa-envelope text-xl"></i>
+                        class="group bg-[#0a0a0a] p-8 rounded-[2rem] border border-white/5 hover:border-accent/30 transition-all duration-500 hover:-translate-y-2 flex items-center justify-between shadow-xl">
+                        <div class="flex items-center gap-6">
+                            <div class="w-16 h-16 bg-black rounded-full flex items-center justify-center border border-white/10 relative overflow-hidden">
+                                <div class="absolute inset-0 bg-accent/10 blur-md group-hover:bg-accent/20 transition-colors"></div>
+                                <i class="fa-solid fa-envelope text-accent text-xl relative z-10"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-bold text-xl mb-1">Email</h4>
+                                <p class="text-gray-500 text-sm font-medium">dilniwijesinghe@gmail.com</p>
+                            </div>
                         </div>
-                        <div>
-                            <h4 class="text-white font-bold text-lg mb-0.5">Email</h4>
-                            <p class="text-gray-500 text-sm font-medium">dilniwijesinghe@gmail.com</p>
-                        </div>
+                        <i class="fa-solid fa-chevron-right text-accent/40 group-hover:text-accent group-hover:translate-x-1 transition-all"></i>
                     </a>
 
                     <!-- LinkedIn Card -->
                     <a href="https://www.linkedin.com/in/dilniwijesinghe/"
-                        class="group bg-[#111111] p-8 rounded-2xl border border-white/5 hover:border-accent/40 transition-all duration-300 hover:-translate-y-[3px] flex items-center gap-6 shadow-lg">
-                        <div
-                            class="w-14 h-14 bg-black rounded-2xl flex items-center justify-center border border-white/10 text-accent group-hover:bg-accent group-hover:text-black transition-all duration-500 shadow-inner flex-shrink-0">
-                            <i class="fa-brands fa-linkedin-in text-xl"></i>
+                        class="group bg-[#0a0a0a] p-8 rounded-[2rem] border border-white/5 hover:border-accent/30 transition-all duration-500 hover:-translate-y-2 flex items-center justify-between shadow-xl">
+                        <div class="flex items-center gap-6">
+                            <div class="w-16 h-16 bg-black rounded-full flex items-center justify-center border border-white/10 relative overflow-hidden">
+                                <div class="absolute inset-0 bg-accent/10 blur-md group-hover:bg-accent/20 transition-colors"></div>
+                                <i class="fa-brands fa-linkedin-in text-accent text-xl relative z-10"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-bold text-xl mb-1">LinkedIn</h4>
+                                <p class="text-gray-500 text-sm font-medium">Connect professionally</p>
+                            </div>
                         </div>
-                        <div>
-                            <h4 class="text-white font-bold text-lg mb-0.5">LinkedIn</h4>
-                            <p class="text-gray-500 text-sm font-medium">Connect professionally</p>
-                        </div>
+                        <i class="fa-solid fa-chevron-right text-accent/40 group-hover:text-accent group-hover:translate-x-1 transition-all"></i>
                     </a>
 
                     <!-- GitHub Card -->
                     <a href="https://github.com/dilni"
-                        class="group bg-[#111111] p-8 rounded-2xl border border-white/5 hover:border-accent/40 transition-all duration-300 hover:-translate-y-[3px] flex items-center gap-6 shadow-lg">
-                        <div
-                            class="w-14 h-14 bg-black rounded-2xl flex items-center justify-center border border-white/10 text-accent group-hover:bg-accent group-hover:text-black transition-all duration-500 shadow-inner flex-shrink-0">
-                            <i class="fa-brands fa-github text-xl"></i>
+                        class="group bg-[#0a0a0a] p-8 rounded-[2rem] border border-white/5 hover:border-accent/30 transition-all duration-500 hover:-translate-y-2 flex items-center justify-between shadow-xl">
+                        <div class="flex items-center gap-6">
+                            <div class="w-16 h-16 bg-black rounded-full flex items-center justify-center border border-white/10 relative overflow-hidden">
+                                <div class="absolute inset-0 bg-accent/10 blur-md group-hover:bg-accent/20 transition-colors"></div>
+                                <i class="fa-brands fa-github text-accent text-xl relative z-10"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-bold text-xl mb-1">GitHub</h4>
+                                <p class="text-gray-500 text-sm font-medium">See my code & projects</p>
+                            </div>
                         </div>
-                        <div>
-                            <h4 class="text-white font-bold text-lg mb-0.5">GitHub</h4>
-                            <p class="text-gray-500 text-sm font-medium">See my code & projects</p>
-                        </div>
+                        <i class="fa-solid fa-chevron-right text-accent/40 group-hover:text-accent group-hover:translate-x-1 transition-all"></i>
                     </a>
                 </div>
             </div>
 
-            <hr class="border-white/10 mt-24 mb-12">
+            <hr class="border-white/5 mt-24 mb-12">
 
             <!-- Multi-Column Footer Grid -->
             <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
