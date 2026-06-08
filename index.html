@@ -1,4 +1,4 @@
-﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿<!DOCTYPE html>
+﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿<!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
 
 <head>
@@ -1053,90 +1053,85 @@
     </section>
 
     <!-- Advanced CTA Footer Section -->
-    <section id="contact" class="min-h-[80vh] flex flex-col justify-center border-t border-white/10 bg-darkgray py-24 relative overflow-hidden">
-        <div class="absolute top-0 right-1/4 w-96 h-96 bg-accent/5 rounded-full blur-[100px] pointer-events-none"></div>
+    <section id="contact" class="min-h-[80vh] flex flex-col justify-center border-t border-white/5 bg-black py-24 relative overflow-hidden">
         <div class="max-w-7xl mx-auto px-6 relative z-10">
             <!-- CTA Header -->
-            <div class="max-w-3xl mb-16 reveal">
-                <h2 class="text-4xl font-bold mb-4">Get In <span class="text-accent">Touch</span></h2>
-                <div class="w-24 h-1 bg-accent mb-8 rounded"></div>
+            <div class="mb-16 reveal">
+                <h2 class="text-5xl font-bold mb-4">Get In <span class="text-accent">Touch</span></h2>
+                <div class="w-20 h-0.5 bg-accent/60 mb-8"></div>
                 <p class="text-gray-400 mt-6 max-w-2xl text-lg leading-relaxed">
                     Have a question, a project idea, or just want to say hello? Drop me a message below and I'll get back to you as soon as possible.
                 </p>
             </div>
 
-            <div class="grid lg:grid-cols-5 gap-12 reveal">
-                <!-- Left Column: Form (spans 3 cols) -->
-                <div class="lg:col-span-3">
+            <div class="grid lg:grid-cols-12 gap-12 reveal">
+                <!-- Left Column: Form (spans 7 cols) -->
+                <div class="lg:col-span-7">
                     <form action="https://formspree.io/f/dilniwijesinghe@gmail.com" method="POST"
-                        class="bg-black/40 p-8 md:p-10 rounded-3xl border border-white/5 relative overflow-hidden group">
-                        <!-- Glow highlight -->
-                        <div
-                            class="absolute top-0 right-0 w-64 h-64 bg-accent/5 rounded-bl-full pointer-events-none group-hover:scale-110 transition-transform duration-700">
-                        </div>
-
-                        <div class="grid md:grid-cols-2 gap-6 mb-6 relative z-10">
+                        class="bg-darkgray/30 p-8 md:p-10 rounded-3xl border border-white/5 shadow-2xl">
+                        
+                        <div class="grid md:grid-cols-2 gap-8 mb-8">
                             <div>
-                                <label class="block text-sm font-medium text-gray-400 mb-2">Name</label>
+                                <label class="block text-sm font-semibold text-gray-500 mb-3 tracking-wide">Name</label>
                                 <input type="text" name="name" placeholder="John Doe" required
-                                    class="w-full bg-black border border-white/10 rounded-xl px-4 py-4 text-white placeholder-gray-600 focus:outline-none focus:border-accent focus:shadow-[0_0_15px_rgba(199,178,139,0.2)] transition-all">
+                                    class="w-full bg-black border border-white/5 rounded-2xl px-6 py-5 text-white placeholder-gray-700 focus:outline-none focus:border-accent/50 transition-all text-lg">
                             </div>
                             <div>
-                                <label class="block text-sm font-medium text-gray-400 mb-2">Email</label>
+                                <label class="block text-sm font-semibold text-gray-500 mb-3 tracking-wide">Email</label>
                                 <input type="email" name="email" placeholder="john@example.com" required
-                                    class="w-full bg-black border border-white/10 rounded-xl px-4 py-4 text-white placeholder-gray-600 focus:outline-none focus:border-accent focus:shadow-[0_0_15px_rgba(199,178,139,0.2)] transition-all">
+                                    class="w-full bg-black border border-white/5 rounded-2xl px-6 py-5 text-white placeholder-gray-700 focus:outline-none focus:border-accent/50 transition-all text-lg">
                             </div>
                         </div>
-                        <div class="mb-8 relative z-10">
-                            <label class="block text-sm font-medium text-gray-400 mb-2">Message</label>
-                            <textarea name="message" placeholder="Tell me about your project..." rows="5" required
-                                class="w-full h-40 bg-black border border-white/10 rounded-xl px-4 py-4 text-white placeholder-gray-600 focus:outline-none focus:border-accent focus:shadow-[0_0_15px_rgba(199,178,139,0.2)] transition-all resize-none"></textarea>
+                        <div class="mb-10">
+                            <label class="block text-sm font-semibold text-gray-500 mb-3 tracking-wide">Message</label>
+                            <textarea name="message" placeholder="Tell me about your project..." rows="6" required
+                                class="w-full bg-black border border-white/5 rounded-2xl px-6 py-5 text-white placeholder-gray-700 focus:outline-none focus:border-accent/50 transition-all resize-none text-lg"></textarea>
                         </div>
                         <button type="submit"
-                            class="w-full bg-accent text-black font-bold py-4 rounded-xl transition-all duration-300 hover:brightness-110 hover:-translate-y-[3px] shadow-[0_0_15px_rgba(199,178,139,0.3)] hover:shadow-[0_10px_20px_rgba(199,178,139,0.4)] flex items-center justify-center gap-3 relative z-10">
+                            class="w-full bg-accent text-black font-bold py-5 rounded-2xl transition-all duration-300 hover:brightness-110 flex items-center justify-center gap-4 text-xl shadow-lg shadow-accent/10">
                             Send Message <i class="fa-solid fa-paper-plane"></i>
                         </button>
                     </form>
                 </div>
 
-                <!-- Right Column: Contact Cards (spans 2 cols) -->
-                <div class="lg:col-span-2 flex flex-col gap-6">
+                <!-- Right Column: Contact Cards (spans 5 cols) -->
+                <div class="lg:col-span-5 flex flex-col gap-6">
                     <!-- Email Card -->
                     <a href="mailto:dilniwijesinghe@gmail.com"
-                        class="group bg-black/40 p-8 rounded-2xl border border-white/5 hover:border-accent/40 transition-all duration-300 hover:-translate-y-[3px] hover:shadow-[0_10px_20px_rgba(199,178,139,0.4)] flex items-center gap-6">
+                        class="group bg-darkgray/30 p-10 rounded-3xl border border-white/5 hover:border-accent/20 transition-all duration-300 flex items-center gap-8">
                         <div
-                            class="w-16 h-16 bg-black rounded-full flex items-center justify-center border border-white/10 text-accent group-hover:bg-accent group-hover:text-black transition-colors shadow-inner shadow-accent/10 flex-shrink-0">
+                            class="w-16 h-16 bg-black rounded-2xl flex items-center justify-center border border-white/10 text-accent group-hover:bg-accent group-hover:text-black transition-all duration-300 shadow-xl flex-shrink-0">
                             <i class="fa-solid fa-envelope text-2xl"></i>
                         </div>
                         <div>
-                            <h4 class="text-white font-bold text-xl mb-1">Email</h4>
-                            <p class="text-gray-400 text-sm">dilniwijesinghe@gmail.com</p>
+                            <h4 class="text-white font-bold text-2xl mb-1">Email</h4>
+                            <p class="text-gray-500 text-base font-medium">dilniwijesinghe@gmail.com</p>
                         </div>
                     </a>
 
                     <!-- LinkedIn Card -->
                     <a href="https://www.linkedin.com/in/dilniwijesinghe/"
-                        class="group bg-black/40 p-8 rounded-2xl border border-white/5 hover:border-accent/40 transition-all duration-300 hover:-translate-y-[3px] hover:shadow-[0_10px_20px_rgba(199,178,139,0.4)] flex items-center gap-6">
+                        class="group bg-darkgray/30 p-10 rounded-3xl border border-white/5 hover:border-accent/20 transition-all duration-300 flex items-center gap-8">
                         <div
-                            class="w-16 h-16 bg-black rounded-full flex items-center justify-center border border-white/10 text-accent group-hover:bg-accent group-hover:text-black transition-colors shadow-inner shadow-accent/10 flex-shrink-0">
+                            class="w-16 h-16 bg-black rounded-2xl flex items-center justify-center border border-white/10 text-accent group-hover:bg-accent group-hover:text-black transition-all duration-300 shadow-xl flex-shrink-0">
                             <i class="fa-brands fa-linkedin-in text-2xl"></i>
                         </div>
                         <div>
-                            <h4 class="text-white font-bold text-xl mb-1">LinkedIn</h4>
-                            <p class="text-gray-400 text-sm">Connect professionally</p>
+                            <h4 class="text-white font-bold text-2xl mb-1">LinkedIn</h4>
+                            <p class="text-gray-500 text-base font-medium">Connect professionally</p>
                         </div>
                     </a>
 
                     <!-- GitHub Card -->
                     <a href="https://github.com/dilni"
-                        class="group bg-black/40 p-8 rounded-2xl border border-white/5 hover:border-accent/40 transition-all duration-300 hover:-translate-y-[3px] hover:shadow-[0_10px_20px_rgba(199,178,139,0.4)] flex items-center gap-6">
+                        class="group bg-darkgray/30 p-10 rounded-3xl border border-white/5 hover:border-accent/20 transition-all duration-300 flex items-center gap-8">
                         <div
-                            class="w-16 h-16 bg-black rounded-full flex items-center justify-center border border-white/10 text-accent group-hover:bg-accent group-hover:text-black transition-colors shadow-inner shadow-accent/10 flex-shrink-0">
+                            class="w-16 h-16 bg-black rounded-2xl flex items-center justify-center border border-white/10 text-accent group-hover:bg-accent group-hover:text-black transition-all duration-300 shadow-xl flex-shrink-0">
                             <i class="fa-brands fa-github text-2xl"></i>
                         </div>
                         <div>
-                            <h4 class="text-white font-bold text-xl mb-1">GitHub</h4>
-                            <p class="text-gray-400 text-sm">See my code & projects</p>
+                            <h4 class="text-white font-bold text-2xl mb-1">GitHub</h4>
+                            <p class="text-gray-500 text-base font-medium">See my code & projects</p>
                         </div>
                     </a>
                 </div>
