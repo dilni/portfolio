@@ -113,6 +113,11 @@ body.light-mode .bg-black\/20 {
     border-color: #cbd5e1 !important; /* slate-300 */
 }
 
+/* Remove dark image shadow overlay in light mode */
+body.light-mode .from-darkgray {
+    display: none !important;
+}
+
 /* Transparent Header for Light Mode */
 body.light-mode .bg-black\/70 {
     background-color: rgba(255, 255, 255, 0.3) !important;
