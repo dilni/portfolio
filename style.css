@@ -175,6 +175,8 @@ body.light-mode .bg-accent\/60 {
     background-color: rgba(37, 3, 173, 0.6) !important;
 }
 
+body.light-mode .text-accent\/40,
+body.light-mode .text-accent\/60,
 body.light-mode .text-accent\/70 {
     color: rgba(37, 3, 173, 0.8) !important;
 }
