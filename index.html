@@ -1,4 +1,4 @@
-﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿<!DOCTYPE html>
+﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿<!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
 
 <head>
@@ -40,6 +40,19 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
+    <style>
+        /* Force overrides to bypass aggressive local file caching */
+        body.light-mode .from-darkgray {
+            display: none !important;
+            opacity: 0 !important;
+        }
+        
+        body.light-mode .bg-black\/40,
+        body.light-mode .bg-black\/20 {
+            background-color: #f1f5f9 !important; /* slate-100 */
+            border-color: #cbd5e1 !important; /* slate-300 */
+        }
+    </style>
 </head>
 
 <body class="bg-black text-white antialiased overflow-x-hidden selection:bg-accent selection:text-white"></body>
