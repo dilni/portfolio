@@ -106,6 +106,13 @@ body.light-mode .bg-black\/95 {
     border-color: #cbd5e1 !important;
 }
 
+/* Tech Skills Tags Background */
+body.light-mode .bg-black\/40,
+body.light-mode .bg-black\/20 {
+    background-color: #f1f5f9 !important; /* slate-100 */
+    border-color: #cbd5e1 !important; /* slate-300 */
+}
+
 /* Transparent Header for Light Mode */
 body.light-mode .bg-black\/70 {
     background-color: rgba(255, 255, 255, 0.3) !important;
