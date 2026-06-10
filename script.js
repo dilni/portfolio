@@ -1,4 +1,4 @@
-﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿// script.js
+﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿// script.js
 
 // --- Certificate Modal Logic (Now opens in new centered window) ---
 function openCertModal(imageSrc, title) {
@@ -218,29 +218,59 @@ function updateClock() {
 setInterval(updateClock, 1000);
 updateClock();
 
-// --- Theme Toggle (Visual Only) ---
-const themeToggle = document.getElementById('theme-toggle');
-const themeCircle = document.getElementById('theme-toggle-circle');
-const themeIcon = document.getElementById('theme-toggle-icon');
+// --- Theme Toggle Logic ---
+const desktopToggle = document.getElementById('theme-toggle');
+const mobileToggle = document.getElementById('theme-toggle-mobile');
 
-if (themeToggle) {
-    let isDark = true;
-    themeToggle.addEventListener('click', () => {
-        isDark = !isDark;
-        document.body.classList.toggle('light-mode', !isDark);
+function updateThemeUI(isDark) {
+    const toggles = [
+        { 
+            btn: document.getElementById('theme-toggle'), 
+            circle: document.getElementById('theme-toggle-circle'), 
+            icon: document.getElementById('theme-toggle-icon') 
+        },
+        { 
+            btn: document.getElementById('theme-toggle-mobile'), 
+            circle: document.getElementById('theme-toggle-circle-mobile'), 
+            icon: document.getElementById('theme-toggle-icon-mobile') 
+        }
+    ];
+
+    document.body.classList.toggle('light-mode', !isDark);
+
+    toggles.forEach(t => {
+        if (!t.btn || !t.circle || !t.icon) return;
         
         if (isDark) {
-            // Dark Mode State
-            themeCircle.classList.remove('translate-x-0', 'bg-white');
-            themeCircle.classList.add('translate-x-6', 'bg-accent');
-            themeIcon.className = 'fa-solid fa-moon text-[10px] text-black';
+            t.circle.classList.remove('translate-x-0', 'bg-white');
+            t.circle.classList.add('translate-x-6', 'bg-accent');
+            t.icon.className = 'fa-solid fa-moon text-[10px] text-black';
         } else {
-            // Light Mode State
-            themeCircle.classList.remove('translate-x-6', 'bg-accent');
-            themeCircle.classList.add('translate-x-0', 'bg-white');
-            themeIcon.className = 'fa-solid fa-sun text-[10px] text-black';
+            t.circle.classList.remove('translate-x-6', 'bg-accent');
+            t.circle.classList.add('translate-x-0', 'bg-white');
+            t.icon.className = 'fa-solid fa-sun text-[10px] text-black';
         }
     });
+}
+
+if (desktopToggle || mobileToggle) {
+    let isDark = true;
+    
+    const handleToggle = () => {
+        isDark = !isDark;
+        updateThemeUI(isDark);
+        localStorage.setItem('theme', isDark ? 'dark' : 'light');
+    };
+
+    if (desktopToggle) desktopToggle.addEventListener('click', handleToggle);
+    if (mobileToggle) mobileToggle.addEventListener('click', handleToggle);
+
+    // Initial check for saved theme
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme === 'light') {
+        isDark = false;
+        updateThemeUI(isDark);
+    }
 }
 
 // --- AI Chat Widget Logic ---

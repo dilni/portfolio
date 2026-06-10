@@ -29,9 +29,21 @@
     <nav class="fixed top-0 w-full z-50 bg-black/70 backdrop-blur-md border-b border-white/10 py-4">
         <div class="max-w-7xl mx-auto px-6 flex justify-between items-center">
             <a href="index.html" class="text-xl font-bold tracking-wider text-white">Dilni<span class="text-accent">.</span></a>
-            <a href="index.html#experience" class="text-sm font-medium hover:text-accent transition-colors flex items-center gap-2">
-                <i class="fa-solid fa-arrow-left text-xs"></i> Back to Projects
-            </a>
+            
+            <div class="flex items-center gap-6">
+                <!-- Theme Toggle -->
+                <button id="theme-toggle"
+                    class="relative w-12 h-6 bg-white/10 rounded-full border border-white/5 flex items-center px-1 transition-colors hover:bg-white/20 cursor-pointer">
+                    <div id="theme-toggle-circle"
+                        class="w-4 h-4 bg-accent rounded-full shadow-md transform translate-x-6 transition-transform duration-300 flex items-center justify-center">
+                        <i id="theme-toggle-icon" class="fa-solid fa-moon text-[10px] text-black"></i>
+                    </div>
+                </button>
+                
+                <a href="index.html#experience" class="text-sm font-medium hover:text-accent transition-colors flex items-center gap-2">
+                    <i class="fa-solid fa-arrow-left text-xs"></i> Back to Projects
+                </a>
+            </div>
         </div>
     </nav>
 
